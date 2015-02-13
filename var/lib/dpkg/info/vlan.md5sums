@@ -1,0 +1,10 @@
+7573eeaa7ff04d2969ca38ca344abe36  usr/share/doc/vlan/changelog.Debian.gz
+80c423eb78b095d43248623c0d09d178  usr/share/doc/vlan/NEWS.Debian.gz
+8c7a6761fc4e331975f2261c2946e80f  usr/share/doc/vlan/changelog.gz
+00519dfb758e7478c84147d70fa98395  usr/share/doc/vlan/TODO.Debian
+c58c6adac4ee1fef018f57bef8ae8e44  usr/share/doc/vlan/copyright
+5856f35b11b22522111ac53cecba15b7  usr/share/doc/vlan/howto.html
+5b82ca7aeb32ef338d04a53648eee479  usr/share/doc/vlan/vlan.html
+2fcde4992f55158517572e5d595091af  usr/share/man/man5/vlan-interfaces.5.gz
+17df39d4576c59687f0450c0b3d76e79  usr/share/man/man8/vconfig.8.gz
+691ef658caa7ec7b88c54d15e7e4d029  sbin/vconfig

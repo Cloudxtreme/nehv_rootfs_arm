@@ -1,0 +1,51 @@
+[ system console device ttyS0 ]
+sudo: unable to resolve host localhost.localdomain
+
+[ system console ]
+sudo: unable to resolve host localhost.localdomain
+
+[ system host-name vyos ]
+sudo: unable to resolve host localhost.localdomain
+Stopping enhanced syslogd: rsyslogd.
+Starting enhanced syslogd: rsyslogd.
+
+[ system time-zone UTC ]
+Stopping enhanced syslogd: rsyslogd.
+Starting enhanced syslogd: rsyslogd.
+
+[ system config-management commit-revisions 20 ]
+Can't locate URI.pm in @INC (@INC contains: /opt/vyatta/share/perl5 /opt/vyatta/share/perl5/ /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /opt/vyatta/sbin/vyatta-config-mgmt.pl line 40.
+BEGIN failed--compilation aborted at /opt/vyatta/sbin/vyatta-config-mgmt.pl line 40.
+
+[[system config-management commit-revisions]] failed
+[ system ntp ]
+Starting NTP server: ntpd.
+
+[ system syslog ]
+Stopping enhanced syslogd: rsyslogd.
+Starting enhanced syslogd: rsyslogd.
+
+[ system package repository community ]
+Adding new entry to /etc/apt/sources.list...
+
+Commit failed
+[ system host-name vyos ]
+Stopping enhanced syslogd: rsyslogd.
+Starting enhanced syslogd: rsyslogd.
+
+[ system time-zone UTC ]
+Stopping enhanced syslogd: rsyslogd.
+Starting enhanced syslogd: rsyslogd.
+
+[ system config-management commit-revisions 20 ]
+Can't locate URI.pm in @INC (@INC contains: /opt/vyatta/share/perl5 /opt/vyatta/share/perl5/ /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /opt/vyatta/sbin/vyatta-config-mgmt.pl line 40.
+BEGIN failed--compilation aborted at /opt/vyatta/sbin/vyatta-config-mgmt.pl line 40.
+
+[[system config-management commit-revisions]] failed
+[ system ntp ]
+Starting NTP server: ntpd.
+
+[ system package repository community ]
+Adding new entry to /etc/apt/sources.list...
+
+Commit failed

@@ -1,0 +1,64 @@
+Oct 13 19:03:57 localhost sg[855]: user 'root' (login '???' on console) switched to group 'vyattacfg'
+Oct 13 19:03:58 localhost sg[855]: user 'root' (login '???' on console) returned to group 'root'
+Oct 13 19:04:11 localhost sg[1081]: user 'root' (login '???' on console) switched to group 'vyattacfg'
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c #012      declare -a devices=( ttyS0 )#012      if [ ${#devices[*]} == 0 ]; then#012      echo Warning: Access to system console is unconfigured#012      fi 
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_console.pl
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_hosts.pl
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:12 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/ln -fs /usr/share/zoneinfo/UTC /etc/localtime
+Oct 13 19:04:12 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c echo UTC > /etc/timezone
+Oct 13 19:04:12 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/etc/init.d/rsyslog restart
+Oct 13 19:04:13 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta-config-mgmt.pl --action=update-revs --revs=20
+Oct 13 19:04:13 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_login.pl
+Oct 13 19:04:14 vyos useradd[1174]: new user: name=vyos, UID=1000, GID=100, home=/home/vyos, shell=/bin/vbash
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'adm'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'disk'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'sudo'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'dip'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'quaggavty'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'vyattacfg'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to group 'fuse'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'adm'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'disk'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'sudo'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'dip'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'quaggavty'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'vyattacfg'
+Oct 13 19:04:14 vyos useradd[1174]: add 'vyos' to shadow group 'fuse'
+Oct 13 19:04:14 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/cp -b /tmp/ntp.conf /etc/ntp.conf
+Oct 13 19:04:14 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/invoke-rc.d ntp start
+Oct 13 19:04:15 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_logrotate.pl 5 250 1
+Oct 13 19:04:15 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/cp /tmp/rsyslog.conf.8NIrFh /etc/rsyslog.d/vyatta-log.conf
+Oct 13 19:04:15 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/invoke-rc.d rsyslog restart
+Oct 13 19:04:15 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c touch /etc/apt/apt.conf &&     sed -i '/APT::Periodic::Update-Package-Lists*/d' /etc/apt/apt.conf &&     echo "APT::Periodic::Update-Package-Lists "1";" >> /etc/apt/apt.conf
+Oct 13 19:04:15 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/bash -c touch /etc/apt/sources.list && #011    sed -i '\!# community #!d' /etc/apt/sources.list && #011    echo "deb http://packages.vyos.net/vyos helium main # community #" >> /tmp/1250-sources.list && #011    if [  ] || [  ]; #011#011then #011#011sed -i s!://.*@!://! /tmp/1250-sources.list; #011#011sed -i s!://!://:@! /tmp/1250-sources.list; #011     fi && #011     cat /tmp/1250-sources.list>>/etc/apt/sources.list ; #011     rm -f /tmp/1250-sources.list
+Oct 13 19:04:17 vyos sg[1081]: user 'root' (login '???' on console) returned to group 'root'
+Oct 13 19:04:17 vyos getty[1321]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:27 vyos getty[1322]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:37 vyos getty[1323]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:48 vyos getty[1324]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:58 vyos getty[1325]: /dev/ttyS0: No such file or directory
+Oct 13 19:05:19 vyos sg[862]: user 'root' (login '???' on console) switched to group 'vyattacfg'
+Oct 13 19:05:19 vyos sg[862]: user 'root' (login '???' on console) returned to group 'root'
+Oct 13 19:05:21 vyos sg[1076]: user 'root' (login '???' on console) switched to group 'vyattacfg'
+Oct 13 19:05:21 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c #012      declare -a devices=( ttyS0 )#012      if [ ${#devices[*]} == 0 ]; then#012      echo Warning: Access to system console is unconfigured#012      fi 
+Oct 13 19:05:21 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_console.pl
+Oct 13 19:05:21 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_hosts.pl
+Oct 13 19:05:22 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/ln -fs /usr/share/zoneinfo/UTC /etc/localtime
+Oct 13 19:05:22 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c echo UTC > /etc/timezone
+Oct 13 19:05:22 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/etc/init.d/rsyslog restart
+Oct 13 19:05:22 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta-config-mgmt.pl --action=update-revs --revs=20
+Oct 13 19:05:23 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_login.pl
+Oct 13 19:05:24 vyos usermod[1159]: change user 'vyos' password
+Oct 13 19:05:24 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/cp -b /tmp/ntp.conf /etc/ntp.conf
+Oct 13 19:05:24 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/invoke-rc.d ntp start
+Oct 13 19:05:24 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/opt/vyatta/sbin/vyatta_update_logrotate.pl 5 250 1
+Oct 13 19:05:24 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/sh -c touch /etc/apt/apt.conf &&     sed -i '/APT::Periodic::Update-Package-Lists*/d' /etc/apt/apt.conf &&     echo "APT::Periodic::Update-Package-Lists "1";" >> /etc/apt/apt.conf
+Oct 13 19:05:24 vyos sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/bash -c touch /etc/apt/sources.list && #011    sed -i '\!# community #!d' /etc/apt/sources.list && #011    echo "deb http://packages.vyos.net/vyos helium main # community #" >> /tmp/1203-sources.list && #011    if [  ] || [  ]; #011#011then #011#011sed -i s!://.*@!://! /tmp/1203-sources.list; #011#011sed -i s!://!://:@! /tmp/1203-sources.list; #011     fi && #011     cat /tmp/1203-sources.list>>/etc/apt/sources.list ; #011     rm -f /tmp/1203-sources.list
+Oct 13 19:05:25 vyos sg[1076]: user 'root' (login '???' on console) returned to group 'root'
+Oct 13 19:05:25 vyos getty[1273]: /dev/ttyS0: No such file or directory

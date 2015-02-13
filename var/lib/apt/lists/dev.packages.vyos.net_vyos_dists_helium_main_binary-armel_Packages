@@ -1,0 +1,2770 @@
+Package: conntrack
+Version: 1:1.0.1-3+vyos1+helium4
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 120
+Depends: libc6 (>= 2.7), libmnl0, libnetfilter-conntrack3 (>= 0.0.100), libnfnetlink0 (>= 1.0.0)
+Homepage: http://conntrack-tools.netfilter.org/
+Priority: optional
+Section: net
+Filename: pool/main/c/conntrack/conntrack_1.0.1-3+vyos1+helium4_armel.deb
+Size: 40648
+SHA256: 86a356539ad3cf430efdc88d2bfb0ec527ed90041eb8a9c49b71aabc1e978267
+SHA1: 59e4f01c639c2e77294c0903eeda9214402a1d57
+MD5sum: 57faedc20f2835c304034533efa2a70a
+Description: Program to modify the conntrack tables
+ conntrack is a userspace command line program targeted at system
+ administrators. It enables them to view and manage the in-kernel
+ connection tracking state table.
+
+Package: conntrack-helpers
+Source: conntrack
+Version: 1:1.0.1-3+vyos1+helium4
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 100
+Depends: libc6 (>= 2.4), libnetfilter-conntrack3 (>= 0.0.100), libnfnetlink0 (>= 1.0.0)
+Homepage: http://conntrack-tools.netfilter.org/
+Priority: optional
+Section: net
+Filename: pool/main/c/conntrack/conntrack-helpers_1.0.1-3+vyos1+helium4_armel.deb
+Size: 29328
+SHA256: cc363845c91dcaa8af10532df984b3759f2562acc7d08072db8766339a2e2594
+SHA1: 7904ebc09b897814dc98d4c2628dde4cbdcb45ee
+MD5sum: 4291632d76f155901d41bc7d49c24e74
+Description: conntrack-helpers
+ conntrack-helpers
+
+Package: conntrackd
+Source: conntrack
+Version: 1:1.0.1-3+vyos1+helium4
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 424
+Depends: libc6 (>= 2.7), libmnl0, libnetfilter-conntrack3 (>= 0.0.100), libnetfilter-cthelper, libnetfilter-queue1 (>= 0.0.15), libnfnetlink0 (>= 1.0.0)
+Homepage: http://conntrack-tools.netfilter.org/
+Priority: optional
+Section: net
+Filename: pool/main/c/conntrack/conntrackd_1.0.1-3+vyos1+helium4_armel.deb
+Size: 146466
+SHA256: 33307bb6997624f531438814847dc9e88830759438bea673707990ab9f575d3e
+SHA1: 42f7defbb5d8004b0753bc4421490ec0f45dd71c
+MD5sum: 6eec1b34605f9d4ebdad6fb0158cf5a0
+Description: Connection tracking daemon
+ Conntrackd can replicate the status of the connections that are
+ currently being processed by your stateful firewall based on Linux.
+ Conntrackd can also run as statistics daemon.
+
+Package: eventwatchd
+Version: 0.2
+Architecture: all
+Maintainer: VyOS Maintainers <maintainers@vyos.net>
+Installed-Size: 80
+Depends: bash (>= 3.1), libxml-simple-perl
+Priority: extra
+Section: contrib/utils
+Filename: pool/main/e/eventwatchd/eventwatchd_0.2_all.deb
+Size: 6818
+SHA256: 0a3dac11925c8699774eac33a679022e4e8506838cf69273edf26c28fb2d4e04
+SHA1: 092eedb476249edeb44ddfef4a6dc8af4fb09f2f
+MD5sum: 18eedd1bc9b2799450361979e3ce0fb7
+Description: eventwatchd daemon and related scripts and documentation
+
+Package: hostapd
+Source: wpa (1.1+vyos1+helium1)
+Version: 1:1.1+vyos1+helium1
+Architecture: armel
+Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Installed-Size: 952
+Depends: libc6 (>= 2.4), libnl-3-200 (>= 3.2.25vyos1+helium1), libnl-genl-3-200 (>= 3.2.25vyos1+helium1), libssl0.9.8 (>= 0.9.8m-1), lsb-base (>= 3.2-13), initscripts (>= 2.88dsf-13.1)
+Homepage: http://w1.fi/wpa_supplicant/
+Priority: optional
+Section: net
+Filename: pool/main/w/wpa/hostapd_1.1+vyos1+helium1_armel.deb
+Size: 416010
+SHA256: 44daccc38d61d1e1cf25fb55b4169953968e54833de565c80b7a0881c0d8799e
+SHA1: 1a3370e34b4418757431c6780ab9ded56f2ae73f
+MD5sum: cbf53af4fd87247765b313382b0f2674
+Description: user space IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+
+Package: igmpproxy
+Version: 1:0.1+vyos1+helium2
+Architecture: armel
+Maintainer: UBNT Package Maintainers <maintainers@ubnt.com>
+Installed-Size: 104
+Depends: perl (>= 5.8.8), vyatta-bash | bash (>= 3.1), libc6 (>= 2.4)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/i/igmpproxy/igmpproxy_0.1+vyos1+helium2_armel.deb
+Size: 20730
+SHA256: 36593f2b6446c5b88706265bb4c358031e370a57796d81926586c94cec191a18
+SHA1: a3c6838413f15aa1c31ffe6f7697b88ef843567c
+MD5sum: d206ce912001eaadcfc2e42efc34e5a4
+Description: The igmpproxy package
+ This package has the igmpproxy program.
+
+Package: initramfs-tools
+Version: 0.99.0+vyos1+helium1
+Architecture: all
+Maintainer: VyOS maintainers <maintainers@vyos.net>
+Installed-Size: 472
+Depends: klibc-utils (>= 1.5.9-1), cpio, module-init-tools, udev (>= 0.086-1), findutils (>= 4.2.24)
+Recommends: busybox (>= 1:1.01-3) | busybox-initramfs
+Suggests: bash-completion
+Provides: linux-initramfs-tool
+Priority: optional
+Section: utils
+Filename: pool/main/i/initramfs-tools/initramfs-tools_0.99.0+vyos1+helium1_all.deb
+Size: 89402
+SHA256: 2383459a3ccc9222f41324b5665a44f5dd56b9d719b9dc047f70024110f1d233
+SHA1: 6685b92674c84936e8781f7113a3bc347fe03df0
+MD5sum: 815a0c8c57db8b74c6307587ca26b0d5
+Description: tools for generating an initramfs
+ This package contains tools to create and boot an initramfs for packaged 2.6
+ Linux kernel. The initramfs is a gzipped cpio archive. At boot time, the
+ kernel unpacks that archive into RAM, mounts and uses it as initial root file
+ system. The mounting of the real root file system occurs in early user space.
+ klibc provides utilities to setup root. Having the root on MD, LVM2, LUKS or
+ NFS is also supported.
+ Any boot loader with initrd support is able to load an initramfs archive.
+
+Package: iproute
+Version: 20120801+vyos1+helium2
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1728
+Depends: libc6 (>= 2.11), libdb4.8, libgcc1 (>= 1:4.4.0), libcap2-bin
+Recommends: libatm1
+Conflicts: arpd, vyatta-iproute
+Replaces: vyatta-iproute
+Provides: arpd
+Homepage: http://www.linux-foundation.org/en/Net:Iproute2
+Priority: important
+Section: net
+Filename: pool/main/i/iproute/iproute_20120801+vyos1+helium2_armel.deb
+Size: 765808
+SHA256: 83c5b0ce7a5036bddb06f4f6fa9c63bde85de0ce7897e3d7987cd93322d3845e
+SHA1: 2e35f63efb502a80d5f2c255052aa61ef9360add
+MD5sum: aae56f6a3ac1885f25fdb0e5fce11547
+Description: networking and traffic control tools
+ The iproute suite, also known as iproute2, is a collection of
+ utilities for networking and traffic control.
+ .
+ These tools communicate with the Linux kernel via the (rt)netlink
+ interface, providing advanced features not available through the
+ legacy net-tools commands 'ifconfig' and 'route'.
+
+Package: ipset
+Version: 6.9-1+vyos1+helium2
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 320
+Depends: iptables, libc6 (>= 2.4), libmnl0
+Priority: extra
+Section: net
+Filename: pool/main/i/ipset/ipset_6.9-1+vyos1+helium2_armel.deb
+Size: 100202
+SHA256: 069a51e73956c1a9aa8624d606fce84f7a548a735bffe87c9ac5a24e1945bc60
+SHA1: 03dd8234c04ddafd21b7756f6ab0a312af885527
+MD5sum: c2ed774738abc31218dffe97eff0c303
+Description: administration tool for kernel IP sets
+ IP sets are a framework inside the Linux 2.4.x and 2.6.x kernel which can be
+ administered by the ipset(8) utility. Depending on the type, an IP set may
+ store IPv4 addresses, TCP/UDP port numbers, or IPv4 addresses with MAC
+ addresses in a way which ensures lightning speed when matching an entry
+ against a set.
+ .
+ If you want to
+ .
+  * store multiple IPv4 addresses or port numbers and match against the entire
+  collection using a single iptables rule;
+ .
+  * dynamically update iptables rules against IPv4 addresses or ports without
+  performance penalty;
+ .
+  * express complex IPv4 address and ports based rulesets with a single iptables
+  rule and benefit from the speed of IP sets;
+ .
+ then IP sets may be the proper tool for you.
+ .
+ Note: the ipset(8) utility is the userspace counterpart to kernel functionality
+ which requires patches from the patch-o-matic-ng project applied to the kernel.
+
+Package: iptables
+Version: 1.4.20+vyos1+helium4
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1276
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libnfnetlink0 (>= 1.0.0)
+Homepage: http://www.netfilter.org/
+Priority: important
+Section: net
+Filename: pool/main/i/iptables/iptables_1.4.20+vyos1+helium4_armel.deb
+Size: 347770
+SHA256: 0f94f5c940f31270b1004bfbf70fe6b7fd37ee93ba3f0820671fe5e30eb83f08
+SHA1: edb46067337af33ea986a42b71bad3f770c84340
+MD5sum: 43829ef2671669a204d1a3a57f89e08a
+Description: administration tools for packet filtering and NAT
+ These are the user-space administration tools for the Linux
+ kernel's netfilter and iptables. netfilter and iptables provide
+ a framework for stateful and stateless packet filtering, network
+ and port address translation, and other IP packet manipulation.
+ The framework is the successor to ipchains.
+ .
+ netfilter and iptables are used in applications such as Internet
+ connection sharing, firewalls, IP accounting, transparent proxying,
+ advanced routing and traffic control.
+
+Package: iptables-dev
+Source: iptables
+Version: 1.4.20+vyos1+helium4
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 180
+Depends: iptables (= 1.4.20+vyos1+helium4)
+Conflicts: iptables (<< 1.4.2-2)
+Homepage: http://www.netfilter.org/
+Priority: optional
+Section: devel
+Filename: pool/main/i/iptables/iptables-dev_1.4.20+vyos1+helium4_armel.deb
+Size: 41764
+SHA256: 506b7b92a8712c3508ddcfd4f49073b366b6927be70d573b165b06c106a88935
+SHA1: 1fef1b30b3505d21ae9c05b05ba0872aa0eeed47
+MD5sum: 99cb4f00a6f03e609e1e59d4cbe5de64
+Description: iptables development files
+ iptables is used to setup, maintain, and inspect the tables of
+ packet filter rules in the Linux kernel. These packages contain
+ the available library (libipq, libiptc, libxtables), header,
+ documentation and related files for iptables development.
+
+Package: libcap-dev
+Source: libcap2
+Version: 1:2.19-3+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 108
+Depends: libcap2 (= 1:2.19-3+vyos1+helium1)
+Suggests: manpages-dev
+Conflicts: libcap2-dev
+Replaces: libcap2-dev
+Provides: libcap2-dev
+Homepage: http://sites.google.com/site/fullycapable/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libc/libcap2/libcap-dev_2.19-3+vyos1+helium1_armel.deb
+Size: 24916
+SHA256: bc3881504d6c28e5b22ba3fa12e54d4801d929ff45793b16773311f370ec6dd6
+SHA1: 1e775fa52eb06da4cbe2d015b891ec3a14eb0a43
+MD5sum: 36374ba215b4a37f77ec2f78e8b5bc00
+Description: development libraries and header files for libcap2
+ Contains the necessary support for building applications that use
+ capabilities.
+
+Package: libcap2
+Version: 1:2.19-3+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 68
+Depends: libattr1 (>= 2.4.41-1), libc6 (>= 2.4)
+Homepage: http://sites.google.com/site/fullycapable/
+Priority: standard
+Section: libs
+Filename: pool/main/libc/libcap2/libcap2_2.19-3+vyos1+helium1_armel.deb
+Size: 11590
+SHA256: 9bed77554a507717ea52d6c74f8e86ff52285fc9cb3fd965384054a5318edf60
+SHA1: 6348f8e00621a5fccb5ce4d0cfe1470a9db1bdfe
+MD5sum: d29f1ae6efdce520644f02532c88edd5
+Description: support for getting/setting POSIX.1e capabilities
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels. These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+
+Package: libcap2-bin
+Source: libcap2
+Version: 1:2.19-3+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 2124
+Depends: libc6 (>= 2.4), libcap2, libpam0g (>= 0.99.7.1), libpam-runtime (>= 1.1.1-3~)
+Suggests: libcap-dev
+Conflicts: libcap-bin
+Homepage: http://sites.google.com/site/fullycapable/
+Priority: optional
+Section: utils
+Filename: pool/main/libc/libcap2/libcap2-bin_2.19-3+vyos1+helium1_armel.deb
+Size: 1004088
+SHA256: b2f3435ff9e00dba9c257571263e3b6cb8c9f9d5502c4e82b6b5700f6b323c0f
+SHA1: c8f5c65312733ff4a02954abefcfe6637b845eac
+MD5sum: 118c3ec8eea5cbb58035ce3b967cbba4
+Description: basic utility programs for using capabilities
+ This package contains the programs sucap, execap, getpcaps, setpcaps for
+ manipulation of capabilities. The manpages of this package reference the
+ manpage cap_from_text(3) from the libcap-dev package. Please install the
+ libcap-dev package if you need its documentation.
+
+Package: libmnl-dev
+Source: libmnl
+Version: 1.0.3-5+vyos1+helium1
+Architecture: armel
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 72
+Depends: libmnl0 (= 1.0.3-5+vyos1+helium1)
+Homepage: http://netfilter.org/projects/libmnl/
+Priority: extra
+Section: libdevel
+Filename: pool/main/libm/libmnl/libmnl-dev_1.0.3-5+vyos1+helium1_armel.deb
+Size: 6590
+SHA256: d3ea88b42a60c076b4af859ed9262d10a86a5ccf321e3d03b41444d81694a975
+SHA1: 65abd563c70744c3de62844bf4f6d439047d6af6
+MD5sum: e5ef83774c8fe54bb7e2c77ea16cf803
+Description: minimalistic Netlink communication library (devel)
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+
+Package: libmnl0
+Source: libmnl
+Version: 1.0.3-5+vyos1+helium1
+Architecture: armel
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.4)
+Homepage: http://netfilter.org/projects/libmnl/
+Priority: extra
+Section: libs
+Filename: pool/main/libm/libmnl/libmnl0_1.0.3-5+vyos1+helium1_armel.deb
+Size: 9674
+SHA256: c450d0a2395ee17148ed1f2cfee48c642a63d8fcea9c384b037958e0ed85813f
+SHA1: ae4d9e720b5d47c46ba6112761894c051ff04375
+MD5sum: 7d8003c1447528d67ac83e9d923e0f4f
+Description: minimalistic Netlink communication library
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+
+Package: libnetfilter-conntrack-dev
+Source: libnetfilter-conntrack
+Version: 1.0.0-1+vyos1+helium1
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 100
+Depends: pkg-config, libnetfilter-conntrack3 (= 1.0.0-1+vyos1+helium1), libnfnetlink-dev (>= 1.0.0)
+Homepage: http://www.netfilter.org/projects/libnetfilter_conntrack/
+Priority: extra
+Section: libdevel
+Filename: pool/main/libn/libnetfilter-conntrack/libnetfilter-conntrack-dev_1.0.0-1+vyos1+helium1_armel.deb
+Size: 8820
+SHA256: 21db876e9ab5e5899435473a667a4289f14bbcc21929dae79ca6cf3ac193a3b6
+SHA1: 2cc40d104610f2812f7647f3447f8a7359a72477
+MD5sum: 17cc7e386a4e6accdce5b26685a40ce3
+Description: Development files for libnetfilter-conntrack3
+ libnetfilter_conntrack is a userspace library providing a programming
+ interface (API) to the in-kernel connection tracking state table.
+ .
+ This package provides development files and static libraries.
+
+Package: libnetfilter-conntrack3
+Source: libnetfilter-conntrack
+Version: 1.0.0-1+vyos1+helium1
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 144
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libmnl0, libnfnetlink0 (>= 1.0.0)
+Homepage: http://www.netfilter.org/projects/libnetfilter_conntrack/
+Priority: extra
+Section: libs
+Filename: pool/main/libn/libnetfilter-conntrack/libnetfilter-conntrack3_1.0.0-1+vyos1+helium1_armel.deb
+Size: 40114
+SHA256: 82a6392b440b9526e689ae91d6a663bac845ca65b6d0351b0cc3723efcfc5c15
+SHA1: 7edbbf0e2234d11bf7e6bf4e2cefc6750619aea6
+MD5sum: d5999eebb511ccde78ccbb89a8ea21cb
+Description: Netfilter netlink-conntrack library
+ libnetfilter_conntrack is a userspace library providing a programming
+ interface (API) to the in-kernel connection tracking state table.
+
+Package: libnetfilter-conntrack3-dbg
+Source: libnetfilter-conntrack
+Version: 1.0.0-1+vyos1+helium1
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 352
+Depends: libnetfilter-conntrack3 (= 1.0.0-1+vyos1+helium1)
+Homepage: http://www.netfilter.org/projects/libnetfilter_conntrack/
+Priority: extra
+Section: debug
+Filename: pool/main/libn/libnetfilter-conntrack/libnetfilter-conntrack3-dbg_1.0.0-1+vyos1+helium1_armel.deb
+Size: 103218
+SHA256: 042e77642c59e7ce015530162523916d3b1e1b3c94260dcbb43426ad171f7493
+SHA1: 6d8b2bc01e78aeca42f3e8d2e869237b16f47bb1
+MD5sum: da53f9bd4ff94276f192d7674f84a67a
+Description: Debugging symbols for libnetfilter-conntrack3
+ libnetfilter_conntrack is a userspace library providing a programming
+ interface (API) to the in-kernel connection tracking state table.
+ .
+ This package provides the debugging symbols.
+
+Package: libnetfilter-cthelper
+Version: 1.0.1-4+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 88
+Depends: libc6 (>= 2.4), libmnl0
+Homepage: <insert the upstream URL, if relevant>
+Priority: extra
+Section: unknown
+Filename: pool/main/libn/libnetfilter-cthelper/libnetfilter-cthelper_1.0.1-4+vyos1+helium1_armel.deb
+Size: 8822
+SHA256: 7e526b32aa3ee6efde90655db05fcf3a617286174b08d31d760f21185cd119c2
+SHA1: f4c1c1653945516712bc30a07a9106e2c58371a6
+MD5sum: 1e36cedad4bdf82a74cc5ffef85a38b9
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libnetfilter-cttimeout
+Version: 1.0.0-3+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 96
+Depends: libc6 (>= 2.4), libmnl0
+Homepage: <insert the upstream URL, if relevant>
+Priority: extra
+Section: unknown
+Filename: pool/main/libn/libnetfilter-cttimeout/libnetfilter-cttimeout_1.0.0-3+vyos1+helium1_armel.deb
+Size: 9340
+SHA256: 930106d35c8dabed01ec1da6254a9026f89c6aeb0a1f879b36a97dd43962b136
+SHA1: e9e16747cbd517550c19bc7e1b183505c9fda25e
+MD5sum: 9999d95614a96fc9b176224f696a0939
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libnetfilter-queue-dev
+Source: libnetfilter-queue
+Version: 0.0.17-6+hyos1+helium1
+Architecture: armel
+Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
+Installed-Size: 76
+Depends: pkg-config, libnetfilter-queue1 (= 0.0.17-6+hyos1+helium1), libnfnetlink-dev (>= 0.0.25)
+Homepage: http://www.netfilter.org/projects/libnetfilter_queue/
+Priority: extra
+Section: libdevel
+Filename: pool/main/libn/libnetfilter-queue/libnetfilter-queue-dev_0.0.17-6+hyos1+helium1_armel.deb
+Size: 4538
+SHA256: c932a81471386a55964c872ef9891638b9e2a15865cb284d099cbe3a522f73be
+SHA1: 06aa3d180408ef81e939681bc60cdf5d1de9b818
+MD5sum: 331bb6221d10530878dbd5ca599d1e16
+Description: Development files for libnetfilter-queue1
+ libnetfilter_queue is a userspace library providing an API to packets
+ that have been queued by the kernel packet filter. It is part of a
+ system that deprecates the old ip_queue / libipq mechanism.
+ .
+ This package provides development files and static libraries.
+
+Package: libnetfilter-queue1
+Source: libnetfilter-queue
+Version: 0.0.17-6+hyos1+helium1
+Architecture: armel
+Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.4), libmnl0, libnfnetlink0 (>= 1.0.0)
+Homepage: http://www.netfilter.org/projects/libnetfilter_queue/
+Priority: extra
+Section: libs
+Filename: pool/main/libn/libnetfilter-queue/libnetfilter-queue1_0.0.17-6+hyos1+helium1_armel.deb
+Size: 14218
+SHA256: 1936e7b7e49601ec9138f78f86aae44ccaf20f9d61f87ba8ea9e5b0239904576
+SHA1: edfc16b755ee41f0c0fca99ddbced371c85aadad
+MD5sum: e234806f907533d12d91dd714b3a8002
+Description: Netfilter netlink-queue library
+ libnetfilter_queue is a userspace library providing an API to packets
+ that have been queued by the kernel packet filter. It is part of a
+ system that deprecates the old ip_queue / libipq mechanism.
+
+Package: libnetfilter-queue1-dbg
+Source: libnetfilter-queue
+Version: 0.0.17-6+hyos1+helium1
+Architecture: armel
+Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
+Installed-Size: 96
+Depends: libnetfilter-queue1 (= 0.0.17-6+hyos1+helium1)
+Homepage: http://www.netfilter.org/projects/libnetfilter_queue/
+Priority: extra
+Section: libdevel
+Filename: pool/main/libn/libnetfilter-queue/libnetfilter-queue1-dbg_0.0.17-6+hyos1+helium1_armel.deb
+Size: 20994
+SHA256: dc628f797e674fbc3136f66ba8be3272be64ad1d360d21226f07234b0027b9a8
+SHA1: d46898174dd0995b644e99cff376ec7c7efbafa4
+MD5sum: 192c2c28d6894efde78715b090db85d5
+Description: Debugging symbols for libnetfilter-queue1
+ libnetfilter_queue is a userspace library providing an API to packets
+ that have been queued by the kernel packet filter. It is part of a
+ system that deprecates the old ip_queue / libipq mechanism.
+ .
+ This package provides the debugging symbols.
+
+Package: libnl-3-200
+Source: libnl3
+Version: 3.2.25vyos1+helium1
+Architecture: armel
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Installed-Size: 180
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Homepage: http://people.suug.ch/~tgr/libnl/
+Priority: optional
+Section: libs
+Filename: pool/main/libn/libnl3/libnl-3-200_3.2.25vyos1+helium1_armel.deb
+Size: 54532
+SHA256: 101df6476037e1bed95952835031c162f0a86e389b556ff0d696e27a385072c6
+SHA1: 9739931ef8b79cb9986f3dd85771afdf721fdf10
+MD5sum: 2cd2132c26201219a103324a2e329f22
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+
+Package: libnl-3-dev
+Source: libnl3
+Version: 3.2.25vyos1+helium1
+Architecture: armel
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Installed-Size: 560
+Depends: libnl-3-200 (= 3.2.25vyos1+helium1)
+Conflicts: libnl-dev, libnl2-dev
+Breaks: libnl3-dev
+Replaces: libnl3-dev
+Homepage: http://people.suug.ch/~tgr/libnl/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libn/libnl3/libnl-3-dev_3.2.25vyos1+helium1_armel.deb
+Size: 44524
+SHA256: 4d8179c3b0e8436a78e7122837f2fa7f86282e6463128bc0b8c9a67df77b5e09
+SHA1: 9664b7e16890382c8b19674893e631142de1115e
+MD5sum: bd046413f2345ebb9376798ae7725efe
+Description: development library and headers for libnl-3
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ This package contains the headers needed by all libraries and the  files
+ that are needed to build applications using libnl3.
+
+Package: libnl-genl-3-200
+Source: libnl3
+Version: 3.2.25vyos1+helium1
+Architecture: armel
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Installed-Size: 68
+Depends: libnl-3-200 (= 3.2.25vyos1+helium1), libc6 (>= 2.4)
+Homepage: http://people.suug.ch/~tgr/libnl/
+Priority: optional
+Section: libs
+Filename: pool/main/libn/libnl3/libnl-genl-3-200_3.2.25vyos1+helium1_armel.deb
+Size: 14056
+SHA256: de0a60fda52eb64425523b92a5f8bda811ec29fa2727ed70953365103a881df2
+SHA1: ce184638635178ef65e339722c67902eff23f9ab
+MD5sum: 95aa652b98b8c3750e2c778656e4e894
+Description: library for dealing with netlink sockets - generic netlink
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ API to the generic netlink protocol, an extended version of the netlink
+ protocol.
+
+Package: libnl-genl-3-dev
+Source: libnl3
+Version: 3.2.25vyos1+helium1
+Architecture: armel
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Installed-Size: 48
+Depends: libnl-3-dev (= 3.2.25vyos1+helium1), libnl-genl-3-200 (= 3.2.25vyos1+helium1)
+Homepage: http://people.suug.ch/~tgr/libnl/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libn/libnl3/libnl-genl-3-dev_3.2.25vyos1+helium1_armel.deb
+Size: 6252
+SHA256: 308c8beda1170e6998a324c5829d89ee2877014698fba04aee08147667ebc9dc
+SHA1: 2cc28e44c9d9824ceb708ee8e861b2e22a619601
+MD5sum: c043024ed38787f2efc37f95068af494
+Description: development library and headers for libnl-genl-3
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ This package contains the files that are needed to build applications using
+ libnl-genl-3.
+
+Package: libsnmp-base
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 2704
+Depends: debconf (>= 0.5) | debconf-2.0
+Suggests: snmp-mibs-downloader
+Conflicts: libsnmp-dev (<< 5.4~dfsg), libsnmp9-dev (<< 5.4~dfsg)
+Replaces: libsnmp-dev (<< 5.4~dfsg), libsnmp9-dev (<< 5.4~dfsg)
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: libs
+Filename: pool/main/n/net-snmp/libsnmp-base_5.7.2+vyos1+helium1_all.deb
+Size: 539954
+SHA256: 3a319840c7b5e0380797129499aaaeaa0a4fc05cd251e901a153d1e63191941b
+SHA1: fd68ac36095bf9e10b0e095cecc766c05533b634
+MD5sum: 9ecc885e782bc99f014b43f9ea221380
+Description: SNMP (Simple Network Management Protocol) MIBs and documentation
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ This package includes documentation and MIBs (Management Information
+ Bases) for the SNMP libraries, agents and applications. MIBs contain
+ a formal description of the data that can be managed using SNMP.
+ and applications.
+
+Package: libsnmp-dev
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 6352
+Depends: libc6-dev, libsnmp15 (= 5.7.2+vyos1+helium1), libsnmp-perl (= 5.7.2+vyos1+helium1), libwrap0-dev, libssl-dev, procps, libsensors4-dev
+Conflicts: libsnmp-dev, libsnmp15-dev, libsnmp9-dev, snmp (<< 5.4~dfsg)
+Replaces: libsnmp15-dev, libsnmp9-dev, snmp (<< 5.4~dfsg)
+Provides: libsnmp9-dev
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: libdevel
+Filename: pool/main/n/net-snmp/libsnmp-dev_5.7.2+vyos1+helium1_armel.deb
+Size: 1853752
+SHA256: 684dc6967502cb0dbccc6e45b8db9347e26eb233f5b7a6401bb3b278183c28d3
+SHA1: 04199cc2d66e1c72d3b882d4edcc4682562fb036
+MD5sum: 001a0dc244a61a6e20b13ad0a4d911ef
+Description: SNMP (Simple Network Management Protocol) development files
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP development files include the library headers, static
+ libraries, and documentation needed for development of custom SNMP
+ applications.
+
+Package: libsnmp-perl
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 600
+Depends: perl (>= 5.10.1-17squeeze6), perlapi-5.10.1, libsnmp15 (= 5.7.2+vyos1+helium1), libc6 (>= 2.4), libssl0.9.8 (>= 0.9.8m-1)
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: perl
+Filename: pool/main/n/net-snmp/libsnmp-perl_5.7.2+vyos1+helium1_armel.deb
+Size: 176406
+SHA256: f93ff4a6dbe8ebe81c94a23859f2e17a9aa729686493f27a2d5acb942c2fddd5
+SHA1: 6565cacac87749cf7f8968ff2d751652161f4c09
+MD5sum: e5ca2e774c0271718fc79d74ab1b5989
+Description: SNMP (Simple Network Management Protocol) Perl5 support
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP Perl5 support files provide the Perl functions for
+ integration of SNMP into applications written in Perl.
+
+Package: libsnmp-python
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 56
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: python
+Filename: pool/main/n/net-snmp/libsnmp-python_5.7.2+vyos1+helium1_armel.deb
+Size: 18824
+SHA256: 915ca3e0afa6f9d00ae7164bb72a6364bee0f20ecaf8c7013c6eab09f2480df8
+SHA1: 23234ce610b74cf6beee61d2ffd10d36ae9ad874
+MD5sum: 872b855bc3ea3bcb7c18300d7d2a75fa
+Description: SNMP (Simple Network Management Protocol) Python support
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP Python support files provide the Python functions for
+ integration of SNMP into applications written in Python.
+
+Package: libsnmp15
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 3560
+Depends: libsnmp-base (>= 5.7.2+vyos1+helium1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libpci3 (>= 1:3.1.7), libperl5.10 (>= 5.10.1), libsensors4 (>= 1:3.0.0), libssl0.9.8 (>= 0.9.8m-1)
+Replaces: libsnmp-base (<< 5.4.2.1~dfsg-4), snmp (<< 5.4.3~dfsg-1)
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: libs
+Filename: pool/main/n/net-snmp/libsnmp15_5.7.2+vyos1+helium1_armel.deb
+Size: 1511600
+SHA256: 7bf6c493ed1ade19b1f26f81546568cc253506c96afb0d80b944491df861ae98
+SHA1: d2a3f1222826de54cfb960267bdf8694e9d69847
+MD5sum: 635ae2258df05287cc210a9072955842
+Description: SNMP (Simple Network Management Protocol) library
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP library contains common functions for the construction,
+ sending, receiving, decoding, and manipulation of the SNMP requests
+ and responses.
+
+Package: libsnmp15-dbg
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 5392
+Depends: libsnmp15 (= 5.7.2+vyos1+helium1)
+Homepage: http://net-snmp.sourceforge.net/
+Priority: extra
+Section: debug
+Filename: pool/main/n/net-snmp/libsnmp15-dbg_5.7.2+vyos1+helium1_armel.deb
+Size: 1946118
+SHA256: e486dbc494bbd8887a82e5c61ad6ca1a6844eaa81408e410dbcb60800fbfdeb9
+SHA1: 9a50b8f251fd66e1ce8af85cf1455711c962d1ab
+MD5sum: df693467a35c1f5e73f02b1f0f27b9d9
+Description: SNMP (Simple Network Management Protocol) library debug
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ This package contains the debug symbols for the Net-SNMP libraries.
+
+Package: libssl-dev
+Source: openssl
+Version: 0.9.8zb-1
+Architecture: armel
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Installed-Size: 5792
+Depends: libssl0.9.8 (= 0.9.8zb-1), zlib1g-dev
+Conflicts: libssl08-dev, libssl09-dev, libssl095a-dev, libssl096-dev, ssleay (<< 0.9.2b)
+Priority: optional
+Section: libdevel
+Filename: pool/main/o/openssl/libssl-dev_0.9.8zb-1_armel.deb
+Size: 2149498
+SHA256: d06a20ca3a4afa1dc4aa52e490c52944cd7986d4d240695f71e87d799be33a2c
+SHA1: 3cc03bb780f7557a8d445c29e9579a0673f49e3e
+MD5sum: 3a3c003039c9ae677bf8b0714a6f0879
+Description: SSL development libraries, header files and documentation
+ libssl and libcrypto development libraries, header files and manpages.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: libssl0.9.8
+Source: openssl
+Version: 0.9.8zb-1
+Architecture: armel
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Installed-Size: 1836
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
+Conflicts: libssl, libssl096-dev (<< 0.9.6-2), openssl (<< 0.9.6-2), ssleay (<< 0.9.2b)
+Priority: important
+Section: libs
+Filename: pool/main/o/openssl/libssl0.9.8_0.9.8zb-1_armel.deb
+Size: 882964
+SHA256: b15c86669654821928cfa71fea7a04346de5a318c3a59cbfe9a44b9d1c1b50da
+SHA1: 62ded750324d1df31dcd2174f6cbca5ad2d9c7ae
+MD5sum: 70f004ddff21ef1c5b185f2533fd160b
+Description: SSL shared libraries
+ libssl and libcrypto shared libraries needed by programs like
+ apache-ssl, telnet-ssl and openssh.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: libssl0.9.8-dbg
+Source: openssl
+Version: 0.9.8zb-1
+Architecture: armel
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Installed-Size: 4964
+Depends: libssl0.9.8 (= 0.9.8zb-1)
+Priority: extra
+Section: debug
+Filename: pool/main/o/openssl/libssl0.9.8-dbg_0.9.8zb-1_armel.deb
+Size: 1555762
+SHA256: a81f71e9c92952bed47fe2da079ca4cf39a13d8b2eacb5cdad9a9781bfc1765d
+SHA1: ec4ee5f81138503bbfeab36fc0dc89d1d078a9fd
+MD5sum: d8b27010c2d2cd5de7770fc78450bc5d
+Description: Symbol tables for libssl and libcrypto
+ This package is part of the OpenSSL implementation of SSL.
+
+Package: libstrongswan
+Source: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: armel
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 1052
+Depends: libc6 (>= 2.10), libgcc1 (>= 1:4.4.0), libgmp3c2, libssl0.9.8 (>= 0.9.8m-1), openssl
+Conflicts: strongswan (<< 4.2.12-1)
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/libstrongswan_4.5.2-1.1-bpo60+vyos1+helium3_armel.deb
+Size: 398500
+SHA256: 6129628a3ad5f27f78156c5a17a8ac4d1379b6b8e7f7b270a7233224af801313
+SHA1: 58e25a4154243b53c030170fcc9e4ead3894b514
+MD5sum: 2ba73131adac9c88172de90b7e469c4d
+Description: strongSwan utility and crypto library
+ StrongSwan is an IPsec-based VPN solution for the Linux kernel. It uses the
+ native IPsec stack and runs on any recent 2.6 kernel (no patching required).
+ It supports both IKEv1 and the newer IKEv2 protocols.
+ .
+ This package provides the underlying library of charon and other strongSwan
+ components. It is built in a modular way and is extendable through various
+ plugins.
+
+Package: liburcu-dev
+Source: liburcu
+Version: 0.7.4-1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 488
+Depends: liburcu1 (= 0.7.4-1+vyos1+helium1)
+Homepage: http://lttng.org/urcu
+Priority: extra
+Section: libdevel
+Filename: pool/main/libu/liburcu/liburcu-dev_0.7.4-1+vyos1+helium1_armel.deb
+Size: 89010
+SHA256: 02bb3635bc2714fbb55c5d7be5131565ff20c984212abe2b588931b0d32095b6
+SHA1: 6715f323abb0d565fd62fccdf6e97127cbbd6b73
+MD5sum: 9a229af43a1fc06db7033196f2b62192
+Description: userspace RCU (read-copy-update) library - development files
+ This data synchronization library provides read-side access which scales
+ linearly with the number of cores. It does so by allowing multiples copies of
+ a given data structure to live at the same time, and by monitoring the data
+ structure accesses to detect grace periods after which memory reclamation is
+ possible.
+ .
+ Install this package if you wish to develop your own programs using the
+ userspace RCU library.
+
+Package: liburcu1
+Source: liburcu
+Version: 0.7.4-1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 48
+Homepage: http://lttng.org/urcu
+Priority: extra
+Section: libs
+Filename: pool/main/libu/liburcu/liburcu1_0.7.4-1+vyos1+helium1_armel.deb
+Size: 16450
+SHA256: d7f03a84356620cb422f588529f98de85ad110d448db64ea7953d01dbed56eb4
+SHA1: 051c170a3355ae913845090a11b1fef36973582d
+MD5sum: 25f443c4c9cc12bf887cc2c32742a0f4
+Description: userspace RCU (read-copy-update) library
+ This data synchronization library provides read-side access which scales
+ linearly with the number of cores. It does so by allowing multiples copies of
+ a given data structure to live at the same time, and by monitoring the data
+ structure accesses to detect grace periods after which memory reclamation is
+ possible.
+
+Package: libvyatta-cfg-dev
+Source: vyatta-cfg
+Version: 0.102.0+vyos1+helium9
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1236
+Depends: libvyatta-cfg1 (= 0.102.0+vyos1+helium9), libboost-filesystem1.42-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/v/vyatta-cfg/libvyatta-cfg-dev_0.102.0+vyos1+helium9_armel.deb
+Size: 356304
+SHA256: 119671c950c07804148d71f0fd9b1c5314924138c6c0ee621034315c52dcad56
+SHA1: a586bb9374c6f07375d397953b3529232eb3f69a
+MD5sum: 6c080f5d6b0a4e6362f18f41301e04c0
+Description: libvyatta-cfg development package
+ Development header and library files for the Vyatta configuration back-end
+ library.
+
+Package: libvyatta-cfg1
+Source: vyatta-cfg
+Version: 0.102.0+vyos1+helium9
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 844
+Depends: libsort-versions-perl, libfile-sync-perl, perl (>= 5.10.1-17squeeze6), perlapi-5.10.1, libapt-pkg4.10, libboost-filesystem1.42.0 (>= 1.42.0-1), libboost-system1.42.0 (>= 1.42.0-1), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.16.0), libperl5.10 (>= 5.10.1), libstdc++6 (>= 4.4.0)
+Replaces: vyatta-cfg
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg/libvyatta-cfg1_0.102.0+vyos1+helium9_armel.deb
+Size: 305852
+SHA256: 99af69950188f3f3a8ec1d3a017840f3f5e5e6b2669a6054deb6d31fa637b3a5
+SHA1: 4a05f2d41aa0adcef0b7c77f2d9a569b2ad022c8
+MD5sum: 2cb3baaac51eae9051aab7ffd2a06d0b
+Description: vyatta-cfg back-end library
+ Vyatta configuration back-end library (libvyatta-cfg).
+
+Package: libvyatta-util-dev
+Source: vyatta-util
+Version: 0.13+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 72
+Depends: libvyatta-util1 (= 0.13+vyos1+helium1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/v/vyatta-util/libvyatta-util-dev_0.13+vyos1+helium1_armel.deb
+Size: 8084
+SHA256: e82d08d6d4686bfdb78767f49c074c6e4a52cc8ade9c53f52723678c0f01d7a1
+SHA1: 81f8e28fc7372054efe66f1a2944d546ba877e81
+MD5sum: 389e53dab7a51993a9329889c905d4cb
+Description: libvyatta-util development package
+ Development header and library files for the Vyatta utilities
+ library.
+
+Package: libvyatta-util1
+Source: vyatta-util
+Version: 0.13+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 64
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-util/libvyatta-util1_0.13+vyos1+helium1_armel.deb
+Size: 8460
+SHA256: 921c163b5a9b53d4d94d033168ca49db1a4d5da943e181ab0ddc3b76d49f8269
+SHA1: 0312f8f62915248a5c50b91d3deb48c027545431
+MD5sum: 3f30f4100081bc1c43a3d860416f7795
+Description: Vyatta utilities library
+ Vyatta utilities library (libvyatta-util).
+
+Package: linux-firmware
+Version: 1.29+vyos1+helium2
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 49692
+Replaces: linux-image-2.6.30-1-586-vyatta, linux-image-2.6.30-1-amd64-vyatta, linux-image-2.6.30-1-vyatta-virt, linux-restricted-common
+Priority: optional
+Section: misc
+Filename: pool/main/l/linux-firmware/linux-firmware_1.29+vyos1+helium2_all.deb
+Size: 28985490
+SHA256: b978801e6e78c9b19c2bd2cf168c1f0eb394ace37e75146af8fa2845a4b51dc6
+SHA1: 412b8ea09328b8fba1a247236bd01add3eff2d5d
+MD5sum: 57cd8605b9611ec48a42f6460907d535
+Description: Firmware for Linux kernel drivers
+ This package provides firmware used by Linux kernel drivers.
+
+Package: linux-headers-3.16.0-1-armel-vyos+
+Source: linux-source-3.16.0-1-armel-vyos+
+Version: 3.16.0-1vyos1+helium+squeeze1
+Architecture: armel
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Installed-Size: 45564
+Recommends: libc6-dev | libc-dev, gcc | c-compiler, make (>= 3.80-10), binutils (>= 2.12), util-linux (>= 2.10o)
+Suggests: module-init-tools (>= 0.9.10), e2fsprogs (>= 1.29)
+Provides: linux-headers, linux-headers-3.16
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-source-3.16.0-1-armel-vyos+/linux-headers-3.16.0-1-armel-vyos+_3.16.0-1vyos1+helium+squeeze1_armel.deb
+Size: 9128976
+SHA256: 853ebb67337bc198e692ff3e6905dc347b3f096d077280da532640f2690f8901
+SHA1: ebcd21ca95a699e30fe0368d4ffd8cddb1bad61c
+MD5sum: 63953dadb94fcae017b8511665db650f
+Description: Header files related to Linux kernel, specifically,
+ version 3.16.0-1-armel-vyos+
+ .
+ This package provides kernel header files for sites
+ that want the latest kernel headers for version
+ 3.16.0-1-armel-vyos+.
+ Please read
+ /usr/share/doc/linux-headers-3.16.0-1-armel-vyos+/debian.README.gz
+ for details
+
+Package: linux-headers-3.17.0-rc7-1-armel-vyos+
+Source: linux-source-3.17.0-rc7-1-armel-vyos+
+Version: 3.17.0-1vyos1+helium+squeeze1
+Architecture: armel
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Installed-Size: 46327
+Recommends: libc6-dev | libc-dev, gcc | c-compiler, make (>= 3.80-10), binutils (>= 2.12), util-linux (>= 2.10o)
+Suggests: module-init-tools (>= 0.9.10), e2fsprogs (>= 1.29)
+Provides: linux-headers, linux-headers-3.17
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-source-3.17.0-rc7-1-armel-vyos+/linux-headers-3.17.0-rc7-1-armel-vyos+_3.17.0-1vyos1+helium+squeeze1_armel.deb
+Size: 9290216
+SHA256: d7df4937920fc7a51f107c3f958a508329b31befa7f4b5602c3cb850980bb11e
+SHA1: ff645fcee2b2f347fbec25ffade48d2d2ebbb47c
+MD5sum: 7d2718ae5404661fb4f064e001231769
+Description: Header files related to Linux kernel, specifically,
+ version 3.17.0-rc7-1-armel-vyos+
+ .
+ This package provides kernel header files for sites
+ that want the latest kernel headers for version
+ 3.17.0-rc7-1-armel-vyos+.
+ Please read
+ /usr/share/doc/linux-headers-3.17.0-rc7-1-armel-vyos+/debian.README.gz
+ for details
+
+Package: linux-image-3.16.0-1-armel-vyos+
+Source: linux-source-3.16.0-1-armel-vyos+
+Version: 3.16.0-1vyos1+helium+squeeze1
+Architecture: armel
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Installed-Size: 28379
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Depends: coreutils (>= 5.96)
+Suggests: fdutils, linux-doc-3.16.0-1-armel-vyos+ | linux-source-3.16.0-1-armel-vyos+, ksymoops, linux-image-3.16.0-1-armel-vyos+-dbg
+Provides: linux-image, linux-image-3.16
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-source-3.16.0-1-armel-vyos+/linux-image-3.16.0-1-armel-vyos+_3.16.0-1vyos1+helium+squeeze1_armel.deb
+Size: 11966276
+SHA256: 3c8a94be0fdb2377d662aea3a84682f9314421ef4ed2b2190cd9bec541d2b9cd
+SHA1: ec55de38ec2d39827f9fd596510e87fb681e05a7
+MD5sum: eebedb908c7a7e4343f9758928580865
+Description: Linux kernel binary image for version 3.16.0-1-armel-vyos+
+ This package contains the Linux kernel image for version
+ 3.16.0-1-armel-vyos+.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
+
+Package: linux-image-3.17.0-rc7-1-armel-vyos+
+Source: linux-source-3.17.0-rc7-1-armel-vyos+
+Version: 3.17.0-1vyos1+helium+squeeze1
+Architecture: armel
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Installed-Size: 28538
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Depends: coreutils (>= 5.96)
+Suggests: fdutils, linux-doc-3.17.0-rc7-1-armel-vyos+ | linux-source-3.17.0-rc7-1-armel-vyos+, ksymoops, linux-image-3.17.0-rc7-1-armel-vyos+-dbg
+Provides: linux-image, linux-image-3.17
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-source-3.17.0-rc7-1-armel-vyos+/linux-image-3.17.0-rc7-1-armel-vyos+_3.17.0-1vyos1+helium+squeeze1_armel.deb
+Size: 12041386
+SHA256: a10a8beac198a2d699701da2de110a37b65a694c73a048358e55e364fe2054bb
+SHA1: 490d75d3ca2812e8e46ddeec30d797887f700cf9
+MD5sum: 889c4cb59881a7ed7ea6440e4afb04c5
+Description: Linux kernel binary image for version 3.17.0-rc7-1-armel-vyos+
+ This package contains the Linux kernel image for version
+ 3.17.0-rc7-1-armel-vyos+.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
+
+Package: live-initramfs
+Version: 1.157.1-1+vyos1+helium3
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 440
+Depends: busybox, file, initramfs-tools, sudo, udev, user-setup
+Recommends: eject, uuid-runtime, wget
+Suggests: loop-aes-utils, curlftpfs, genext2fs (>= 1.4.1), httpfs2, squashfs-tools, mtd-tools
+Homepage: http://debian-live.alioth.debian.org/
+Priority: optional
+Section: misc
+Filename: pool/main/l/live-initramfs/live-initramfs_1.157.1-1+vyos1+helium3_all.deb
+Size: 85360
+SHA256: 48ca04fbafdf3f10fed70bd8d9fa28b628b5484766270114c24bd63df5b419fe
+SHA1: 94f94e3da5084180661de73672e2825cbb4ccf70
+MD5sum: 1bda6fe69ff990300eb6e6250f36b599
+Description: Debian Live initramfs hook
+ live-initramfs is a hook for the initramfs-tools, used to generate a initramfs
+ capable to boot live systems, such as those created by live-helper. This
+ includes the Debian Live isos, netboot tarballs, and usb stick images.
+ .
+ At boot time it will look for a (read-only) media containing a "/live"
+ directory where a root filesystems (often a compressed filesystem image like
+ squashfs) is stored. If found, it will create a writable environment, using
+ aufs or unionfs, for Debian like systems to boot from.
+ .
+ You probably do not want to install this package onto a non-live system,
+ although it will do no harm.
+ .
+ live-initramfs is a fork of casper <http://packages.ubuntu.com/casper/>.
+
+Package: lldpd
+Version: 0.6.0+vyos1+helium1
+Architecture: armel
+Maintainer: Vincent Bernat <bernat@debian.org>
+Installed-Size: 288
+Depends: adduser
+Suggests: snmpd
+Homepage: https://trac.luffy.cx/lldpd/
+Priority: optional
+Section: net
+Filename: pool/main/l/lldpd/lldpd_0.6.0+vyos1+helium1_armel.deb
+Size: 100868
+SHA256: 3380c7c0d94b8ba6566f9113843d998c7c8b9e3eb1730a0b6481e7dd221eb4f4
+SHA1: cb07630cdd48d560a053a558bedf66d90f53a7c8
+MD5sum: 472cc1b883af273562ecc0143c2a3e85
+Description: implementation of IEEE 802.1ab (LLDP)
+ LLDP is an industry standard protocol designed to supplant
+ proprietary Link-Layer protocols such as Extreme's EDP (Extreme
+ Discovery Protocol) and CDP (Cisco Discovery Protocol). The goal of
+ LLDP is to provide an inter-vendor compatible mechanism to deliver
+ Link-Layer notifications to adjacent network devices.
+ .
+ This implementation provides LLDP sending and reception, supports
+ VLAN and includes an SNMP subagent that can interface to an SNMP
+ agent through AgentX protocol.
+ .
+ This daemon is also able to deal with CDP, SONMP, FDP and EDP
+ protocol. It also handles LLDP-MED extension.
+
+Package: netplug
+Version: 1.2.9.1-2+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 132
+Depends: libc6 (>= 2.4), iproute
+Homepage: http://www.red-bean.com/~bos/
+Priority: optional
+Section: net
+Filename: pool/main/n/netplug/netplug_1.2.9.1-2+vyos1+helium1_armel.deb
+Size: 22572
+SHA256: d606ed96bf8dcfe0015a196d763bebbf0f70fdc5700d5c9a6223c8f5ec8af409
+SHA1: 8285a7d42da2ce4d1cd52561eddb80b9e08a9ee2
+MD5sum: 03f10ec45ec56abad55e1aab3354b63a
+Description: network link monitor daemon
+ This daemon monitors the link status of network cards and configures
+ the network on plug- and un-plug-events.
+ .
+ It's similar to ifplugd, but uses NETLINK instead of regularly polling
+ the link status. This improves power-consumption with laptops, but does
+ not work with all network card.
+
+Package: nfct
+Source: conntrack
+Version: 1:1.0.1-3+vyos1+helium4
+Architecture: armel
+Maintainer: Alexander Wirt <formorer@debian.org>
+Installed-Size: 84
+Depends: libc6 (>= 2.4), libmnl0, libnetfilter-conntrack3 (>= 0.0.100), libnetfilter-cthelper, libnetfilter-cttimeout, libnfnetlink0 (>= 1.0.0)
+Homepage: http://conntrack-tools.netfilter.org/
+Priority: optional
+Section: net
+Filename: pool/main/c/conntrack/nfct_1.0.1-3+vyos1+helium4_armel.deb
+Size: 27562
+SHA256: 6ce65269bc0b3f9e6af1bedd91fecc47c86aabb09f4397ed1f3b747d63ed079b
+SHA1: 66be01082c497f3b6fede8f197dc1112a5f0cb36
+MD5sum: 35376dcfca66620c929643d1a2234e32
+Description: nfct library
+ nfct library
+
+Package: ntp
+Version: 1:4.2.6.p2+dfsg-1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 1380
+Pre-Depends: dpkg (>= 1.15.7.2)
+Depends: adduser, lsb-base (>= 3.2-13), netbase, libc6 (>= 2.7), libcap2, libedit2 (>= 2.11-20080614-1), libgcc1 (>= 1:4.4.0), libopts25 (>= 1:5.10), libpci3 (>= 1:3.1.7), libperl5.10 (>= 5.10.1), libsensors4 (>= 1:3.0.0), libsnmp15, libssl0.9.8 (>= 0.9.8m-1)
+Recommends: perl
+Breaks: dhcp3-client (<< 4.1.0-1)
+Homepage: http://support.ntp.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/ntp/ntp_4.2.6.p2+dfsg-1+vyos1+helium1_armel.deb
+Size: 603666
+SHA256: d06c45b4d3d9678e25f7f403f5e39b33001b39949eadc94a85a508db9156627a
+SHA1: d694685eb0a7f2a78b25df747b8d212391073237
+MD5sum: 3e02720842c4b66ad50b57236d422109
+Description: Network Time Protocol daemon and utility programs
+ NTP, the Network Time Protocol, is used to keep computer clocks
+ accurate by synchronizing them over the Internet or a local network,
+ or by following an accurate hardware receiver that interprets GPS,
+ DCF-77, NIST or similar time signals.
+ .
+ This package contains the NTP daemon and utility programs.  An NTP
+ daemon needs to be running on each host that is to have its clock
+ accuracy controlled by NTP.  The same NTP daemon is also used to
+ provide NTP service to other hosts.
+
+Package: ntpdate
+Source: ntp
+Version: 1:4.2.6.p2+dfsg-1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 264
+Depends: netbase, libc6 (>= 2.4), libcap2, libgcc1 (>= 1:4.4.0), libssl0.9.8 (>= 0.9.8m-1)
+Recommends: lockfile-progs
+Homepage: http://support.ntp.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/ntp/ntpdate_4.2.6.p2+dfsg-1+vyos1+helium1_armel.deb
+Size: 82266
+SHA256: da9d729856858aba6428ac04d4454b7820338048eb16dec5702d99a1f24fafb5
+SHA1: bd22a828a3d4eae0bf2425fdffde7ac4386c4430
+MD5sum: 3b0bb69f64f892d09730e73cdd2a6358
+Description: client for setting system time from NTP servers
+ NTP, the Network Time Protocol, is used to keep computer clocks
+ accurate by synchronizing them over the Internet or a local network,
+ or by following an accurate hardware receiver that interprets GPS,
+ DCF-77, NIST or similar time signals.
+ .
+ ntpdate is a simple NTP client that sets a system's clock to match
+ the time obtained by communicating with one or more NTP servers.  It
+ is not sufficient, however, for maintaining an accurate clock in the
+ long run.  ntpdate by itself is useful for occasionally setting the
+ time on machines that do not have full-time network access, such as
+ laptops.
+ .
+ If the full NTP daemon from the package "ntp" is installed, then
+ ntpdate is not necessary.
+
+Package: open-vm-tools-dev
+Source: open-vm-tools
+Version: 2:9.4.0-1280544-8+vyos1+helium1
+Architecture: all
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 1996
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: devel
+Filename: pool/main/o/open-vm-tools/open-vm-tools-dev_9.4.0-1280544-8+vyos1+helium1_all.deb
+Size: 750322
+SHA256: c6a0cedc75b95c2bb41718c2a6a69388940882bd0436a653aeaef5b310b7631b
+SHA1: c5384925ec3699735a1e2b9f2bacfcd1f742aa50
+MD5sum: 9892941ee7e4b619b16e91a58ff38e5e
+Description: Open VMware Tools for virtual machines hosted on VMware (development)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package contains the development files.
+
+Package: open-vm-tools-dkms
+Source: open-vm-tools
+Version: 2:9.4.0-1280544-8+vyos1+helium1
+Architecture: all
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 7160
+Depends: dkms (>= 2.1.0.0), make
+Recommends: open-vm-tools
+Suggests: open-vm-tools-desktop
+Breaks: open-vm-tools (<< 2:9.4.0-1280544-8~)
+Replaces: open-vm-tools (<< 2:9.4.0-1280544-8~)
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: kernel
+Filename: pool/main/o/open-vm-tools/open-vm-tools-dkms_9.4.0-1280544-8+vyos1+helium1_all.deb
+Size: 442674
+SHA256: 565a74429683f05c27f1c60497ea062eb4808b2e8188ff28c732f783b18bdb9e
+SHA1: d255209f2ce61065bf1cac53942a8b960f3b65f4
+MD5sum: 2c3ea521aad49a0c4bf2c787c4fa5743
+Description: Open VMware Tools for virtual machines hosted on VMware (DKMS)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package provides the source code for the open-vm kernel modules.
+ The open-vm-tools package is also required in order to make use of these
+ modules. Kernel source or headers are required to compile these modules.
+ .
+ Modules included are legacy vmxnet (newer vmxnet3 is included in the kernel)
+ and vmhgfs (required to mount Shared Folders)
+
+Package: openssl
+Version: 0.9.8zb-1
+Architecture: armel
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Installed-Size: 2324
+Depends: libc6 (>= 2.7), libssl0.9.8 (>= 0.9.8m-1), zlib1g (>= 1:1.1.4)
+Suggests: ca-certificates
+Conflicts: ssleay (<< 0.9.2b)
+Priority: optional
+Section: utils
+Filename: pool/main/o/openssl/openssl_0.9.8zb-1_armel.deb
+Size: 1062874
+SHA256: 66cf31ed63edba328b6c45632228dbf4a538e922af2b6d0398ee40cff6723988
+SHA1: c9b377af165e2f2794835897ae58c05cd638f66c
+MD5sum: 438bf6f56ba74066f15960dea86cb6e0
+Description: Secure Socket Layer (SSL) binary and related cryptographic tools
+ This package contains the openssl binary and related tools.
+ .
+ It is part of the OpenSSL implementation of SSL.
+ .
+ You need it to perform certain cryptographic actions like:
+  -  Creation of RSA, DH and DSA key parameters;
+  -  Creation of X.509 certificates, CSRs and CRLs;
+  -  Calculation of message digests;
+  -  Encryption and decryption with ciphers;
+  -  SSL/TLS client and server tests;
+  -  Handling of S/MIME signed or encrypted mail.
+
+Package: pmacct
+Version: 0.14.0+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 2696
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libpcap0.8 (>= 0.9.8), iproute
+Priority: optional
+Section: net
+Filename: pool/main/p/pmacct/pmacct_0.14.0+vyos1+helium1_armel.deb
+Size: 1106948
+SHA256: 24467a9d75a515b7369fec14e0d3d563612ea5e9e5b6dadbe00fc77653898585
+SHA1: 32fc777460896acee75451bbfc0f4cc5293bdd01
+MD5sum: 061d2c625206010adb8ee506b9c55747
+Description: promiscuous mode traffic accountant
+ pmacct is a tool designed to gather traffic information (bytes and number
+ of packets) by listening on a promiscuous interface or for Netflow data,
+ which may facilitate billing, bandwidth management, traffic analysis, or
+ creating usage graphs.
+ .
+ Data can be stored in memory and queried, displayed directly, or written
+ to a database; storage methods are quite flexible and may aggregate totals
+ or keep them separate.
+
+Package: radvd
+Version: 1:1.15+vyos1+helium2
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 220
+Depends: libc6 (>= 2.4), libdaemon0 (>= 0.10), libgcc1 (>= 1:4.4.0), adduser
+Priority: optional
+Section: net
+Filename: pool/main/r/radvd/radvd_1.15+vyos1+helium2_armel.deb
+Size: 70604
+SHA256: b3f474eb8bf96fc96b5810f82a9c5f46794238f28c55055aaa20762ebe20a7b7
+SHA1: e360f523936b724c2ff3f74bb7e89ddfa364b279
+MD5sum: 77ef00f5b838b327a5c75dcbff8a0ad7
+Description: Router Advertisement Daemon
+ IPv6 has a lot more support for autoconfiguration than IPv4. But
+ for this autoconfiguration to work on the hosts of a network, the
+ routers of the local network have to run a program which answers
+ the autoconfiguration requests of the hosts.
+ .
+ On Linux this program is called radvd, which stands for Router
+ ADVertisement Daemon. This daemon listens to router solicitations (RS)
+ and answers with router advertisement (RA). Furthermore unsolicited
+ RAs are also sent from time to time.
+
+Package: snmp
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 624
+Depends: libc6 (>= 2.4), libsnmp15, libssl0.9.8 (>= 0.9.8m-1)
+Recommends: perl-modules
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: net
+Filename: pool/main/n/net-snmp/snmp_5.7.2+vyos1+helium1_armel.deb
+Size: 211488
+SHA256: b8a0fe5cfce1d1b8a1c13a70beeb0900a85844a33543a0113ad429bff2644fa2
+SHA1: 5d4dbc11273bda05f7569b42980f48995db0ebd8
+MD5sum: 29fa13ff5c30ec09660177f2c9dafda6
+Description: SNMP (Simple Network Management Protocol) applications
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP applications are a collection of command line clients
+ for issuing SNMP requests to agents.
+
+Package: snmpd
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 324
+Depends: libc6 (>= 2.4), libpci3 (>= 1:3.1.7), libperl5.10 (>= 5.10.1), libsensors4 (>= 1:3.0.0), libsnmp15, libssl0.9.8 (>= 0.9.8m-1), debconf (>= 0.5) | debconf-2.0, adduser, debconf, lsb-base (>= 3.2-13)
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: net
+Filename: pool/main/n/net-snmp/snmpd_5.7.2+vyos1+helium1_armel.deb
+Size: 92208
+SHA256: 108671452264db2ec1e133a883cf4e1f23c24167447db7aa51b29c07b130282a
+SHA1: 3c316f8b49e8762519154b3ef870375de8eda86a
+MD5sum: c91f828cc3d878a709fd22364e7659ed
+Description: SNMP (Simple Network Management Protocol) agents
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP agent is a daemon which listens for incoming SNMP
+ requests from clients and provides responses.
+
+Package: squashfs-tools
+Source: squashfs
+Version: 4.1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 340
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4)
+Homepage: http://squashfs.sourceforge.net/
+Priority: optional
+Section: admin
+Filename: pool/main/s/squashfs/squashfs-tools_4.1+vyos1+helium1_armel.deb
+Size: 103514
+SHA256: 9c2e557bf71fdff9c63c589e05ca408ffc73e7b4f85051a9dace71de4f7105bd
+SHA1: caa5842b5691c6291bdf39ae0676a904ea3495fc
+MD5sum: b6a9abf3e9b526c466aa0102602462cd
+Description: Tool to create and append to squashfs filesystems
+ Squashfs is a highly compressed read-only filesystem for Linux. It uses zlib
+ compression to compress both files, inodes and directories. Inodes in the
+ system are very small and all blocks are packed to minimise data overhead.
+ Block sizes greater than 4K are supported up to a maximum of 64K.
+ .
+ Squashfs is intended for general read-only filesystem use, for archival
+ use (i.e. in cases where a .tar.gz file may be used), and in constrained
+ block device/memory systems (e.g. embedded systems) where low overhead is
+ needed.
+
+Package: squidguard
+Version: 1.4.0+vyos1+helium1
+Architecture: armel
+Maintainer: Víctor Pérez Pereira <vperez@debianvenezuela.org>
+Installed-Size: 600
+Depends: libc6 (>= 2.7), libdb4.8, perl, debconf (>= 0.5) | debconf-2.0, squid | squid3, liburi-perl, libwww-perl
+Suggests: chastity-list
+Priority: optional
+Section: web
+Filename: pool/main/s/squidguard/squidguard_1.4.0+vyos1+helium1_armel.deb
+Size: 184540
+SHA256: 24b6f0c69165febaf0808344f68d44412beea73f186982639a344a0c29f377f2
+SHA1: 3b4f6b158cc0a5eefbd0e0633833deda04bf26d1
+MD5sum: 549520a7391384b1652d72b0f548c775
+Description: filter, redirector and access controller plug for Squid
+ squidGuard is a free (GPL), flexible and ultra fast filter, redirector
+ and access controller plugin for squid.  It lets you define multiple
+ access rules with different restrictions for different user groups on
+ a squid cache.  squidGuard uses squid's standard redirector interface.
+
+Package: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: all
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 136
+Depends: strongswan-ikev1, strongswan-ikev2
+Provides: vyatta-ipsec
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/strongswan_4.5.2-1.1-bpo60+vyos1+helium3_all.deb
+Size: 86244
+SHA256: 2f3a9b9d8f5a25a32381fb479d32dc43f323b504f6e115548d3630ea144f4b80
+SHA1: e84920d2442f3de8bbe1b983176f87da6a75ee08
+MD5sum: 6fe273deb98e040e1ba70fcfe32cb8f3
+Description: IPsec VPN solution metapackage
+ The strongSwan VPN suite is based on the IPsec stack in standard Linux 2.6
+ kernels. It supports both the IKEv1 and IKEv2 protocols.
+ .
+ StrongSwan is one of the two remaining forks of the original FreeS/WAN
+ project and focuses on IKEv2 support, X.509 authentication and complete PKI
+ support. For a focus on Opportunistic Encryption (OE) and interoperability
+ with non-standard IPsec features, see Openswan.
+ .
+ This metapackage installs the packages required to maintain IKEv1 and IKEv2
+ connections via ipsec.conf or ipsec.secrets.
+
+Package: strongswan-dbg
+Source: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: armel
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 11952
+Depends: strongswan, libstrongswan
+Homepage: http://www.strongswan.org
+Priority: extra
+Section: debug
+Filename: pool/main/s/strongswan/strongswan-dbg_4.5.2-1.1-bpo60+vyos1+helium3_armel.deb
+Size: 5095554
+SHA256: f5bd7107e6920ec634c22249df59d922b09b891de1cec344ee14e575ff388de4
+SHA1: 4b16f28d1f902e0ea1180f365969af139324700c
+MD5sum: b3f51ce220d58fd7d02b5c7bc95ca00f
+Description: strongSwan library and binaries - debugging symbols
+ StrongSwan is an IPsec-based VPN solution for the Linux kernel. It uses the
+ native IPsec stack and runs on any recent 2.6 kernel (no patching required).
+ It supports both IKEv1 and the newer IKEv2 protocols.
+ .
+ This package provides the symbols needed for debugging of strongswan.
+
+Package: strongswan-ikev1
+Source: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: armel
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 692
+Pre-Depends: debconf | debconf-2.0
+Depends: libc6 (>= 2.7), libcap2, libstrongswan (= 4.5.2-1.1-bpo60+vyos1+helium3), strongswan-starter, bsdmainutils, debianutils (>= 1.7), ipsec-tools, host, iproute
+Suggests: curl
+Conflicts: freeswan (<< 2.04-12), openswan, strongswan (<< 4.2.12-1)
+Replaces: openswan
+Provides: ike-server
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/strongswan-ikev1_4.5.2-1.1-bpo60+vyos1+helium3_armel.deb
+Size: 339100
+SHA256: 6f4360082ffaae37767ba08956eeb88fae33dcc04e685a0bd96c7803f27b8ab5
+SHA1: 48cccffcf76e7f387452dd607e0a134e3eeb960d
+MD5sum: 0826deeca6654706be3c2fb71844b5d0
+Description: strongSwan Internet Key Exchange (v1) daemon
+ StrongSwan is an IPsec-based VPN solution for the Linux kernel. It uses the
+ native IPsec stack and runs on any recent 2.6 kernel (no patching required).
+ It supports both IKEv1 and the newer IKEv2 protocols.
+ .
+ Pluto is an IPsec IKEv1 daemon. It was inherited from the FreeS/WAN
+ project, but provides improved X.509 certificate support and other features.
+ .
+ Pluto can run in parallel with charon, the newer IKEv2 daemon.
+
+Package: strongswan-ikev2
+Source: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: armel
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 900
+Pre-Depends: debconf | debconf-2.0
+Depends: libc6 (>= 2.4), libcap2, libcurl3 (>= 7.16.2-1), libgcc1 (>= 1:4.4.0), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libstrongswan (= 4.5.2-1.1-bpo60+vyos1+helium3), strongswan-starter, bsdmainutils, debianutils (>= 1.7), ipsec-tools, host, iproute
+Suggests: curl
+Conflicts: freeswan (<< 2.04-12), openswan, strongswan (<< 4.2.12-1)
+Provides: ike-server
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/strongswan-ikev2_4.5.2-1.1-bpo60+vyos1+helium3_armel.deb
+Size: 348378
+SHA256: 4818f4e5a147953f3f5eedff47d20704dfffed25f04da3de82da2033b1f490a5
+SHA1: e77c1d4d2ee270f00f7e53b6d0756ccf347d942d
+MD5sum: 8d17f155b0b302c01b922e893aae1ef6
+Description: strongSwan Internet Key Exchange (v2) daemon
+ StrongSwan is an IPsec-based VPN solution for the Linux kernel. It uses the
+ native IPsec stack and runs on any recent 2.6 kernel (no patching required).
+ It supports both IKEv1 and the newer IKEv2 protocols.
+ .
+ Charon is an IPsec IKEv2 daemon. It is
+ written from scratch using a fully multi-threaded design and a modular
+ architecture. Various plugins provide additional functionality.
+ .
+ This build of charon can run in parallel with pluto, the IKEv1 daemon.
+
+Package: strongswan-starter
+Source: strongswan
+Version: 4.5.2-1.1-bpo60+vyos1+helium3
+Architecture: armel
+Maintainer: Rene Mayrhofer <rmayr@debian.org>
+Installed-Size: 932
+Depends: libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libgmp3c2, libstrongswan (= 4.5.2-1.1-bpo60+vyos1+helium3), debconf (>= 0.5) | debconf-2.0, strongswan-ikev1 | strongswan-ikev2
+Conflicts: strongswan (<< 4.2.12-1)
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/strongswan-starter_4.5.2-1.1-bpo60+vyos1+helium3_armel.deb
+Size: 327650
+SHA256: 17ba872ce73fa0e156c9682e1194db98f0d10491b87b72bd457812efefa22c67
+SHA1: 2e13248868c75d8011bb9b04adfb3707bbfa8c8d
+MD5sum: 33aa3d2bbd5ab7046c7094aea62d79a8
+Description: strongSwan daemon starter and configuration file parser
+ StrongSwan is an IPsec-based VPN solution for the Linux kernel. It uses the
+ native IPsec stack and runs on any recent 2.6 kernel (no patching required).
+ It supports both IKEv1 and the newer IKEv2 protocols.
+ .
+ The starter and the associated "ipsec" script control both pluto and charon
+ from the command line. It parses ipsec.conf and loads the configurations to
+ the daemons. While the IKEv2 daemon can use other configuration backends, the
+ IKEv1 daemon is limited to configurations from ipsec.conf.
+
+Package: tkmib
+Source: net-snmp
+Version: 5.7.2+vyos1+helium1
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 184
+Depends: libsnmp-perl (>= 5.7.2+vyos1+helium1), perl-tk
+Homepage: http://net-snmp.sourceforge.net/
+Priority: optional
+Section: net
+Filename: pool/main/n/net-snmp/tkmib_5.7.2+vyos1+helium1_all.deb
+Size: 110936
+SHA256: 38d14d44979478f483d12711f6fd1b9e1e8389b87f60cda948446b1ade3b68d7
+SHA1: ab760d07c308b1333926b7df8a4ee21ad7f28886
+MD5sum: 12e64ea33a629d8ec8a7c5ec35addf30
+Description: SNMP (Simple Network Management Protocol) MIB browser
+ The Simple Network Management Protocol (SNMP) provides a framework
+ for the exchange of management information between agents (servers)
+ and clients.
+ .
+ The Net-SNMP MIB (Management Information Base) Browser provides a
+ graphical frontend for the Net-SNMP tools. It can be used to browse
+ the MIB tree and interactively send requests to SNMP agents.
+
+Package: ubnt-igmpproxy
+Version: 0.1.0+vyos1+helium2
+Architecture: armel
+Maintainer: UBNT Package Maintainers <maintainers@ubnt.com>
+Installed-Size: 216
+Depends: perl (>= 5.8.8), vyatta-bash | bash (>= 3.1), igmpproxy
+Priority: extra
+Section: contrib/net
+Filename: pool/main/u/ubnt-igmpproxy/ubnt-igmpproxy_0.1.0+vyos1+helium2_armel.deb
+Size: 6708
+SHA256: f2c84419afd8da84449373133a09c22d2317486b755c9ad5b4e875db37d90b87
+SHA1: 40553805413c0dfa01e6e6611542118cd83d4391
+MD5sum: 679728215fb6a18c4770243bae2cffe3
+Description: The ubnt-igmpproxy package
+ This package has the ubnt-igmpproxy programs, and vyatta
+ configureation/operational templates and scripts.
+
+Package: vyatta-base
+Version: 0.58+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 116
+Depends: sed (>= 4.1.5), bash (>= 3.1), grep (>= 2.5), dpkg (>= 1.14.16), expect, apt
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-base/vyatta-base_0.58+vyos1+helium2_all.deb
+Size: 14526
+SHA256: 75ed6298da89dce1bc3d7582c070c7595cb7278100d2bf0eb7529e9aafdf7dce
+SHA1: cfba228c40d13c281027f89d830bf049c4a11ae0
+MD5sum: b0f7dc9cd39cc209fd6d87ec7c55b2ee
+Description: VyOS full-upgrade script
+ This script allows a full-upgrade all VyOS software
+ using apt and pdkg.  It will install all VyOS packages,
+ regardless of whether the individual VyOS package was
+ previously installed.
+
+Package: vyatta-bash
+Version: 4.1-3+vyos1+helium4
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1120
+Pre-Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libncurses5 (>= 5.7+20100313)
+Depends: base-files (>= 2.1.12), debianutils (>= 2.15), bash (>= 3.1)
+Priority: optional
+Section: shells
+Filename: pool/main/v/vyatta-bash/vyatta-bash_4.1-3+vyos1+helium4_armel.deb
+Size: 652428
+SHA256: 4aaae4b894b1a324052a5828ab89e538472a6b2bbb16d70f2c1f4df4eb92277c
+SHA1: 0f1da3375514fe434cc796fbef2b761c6728b24b
+MD5sum: 0ad175ff6fa66895fe7456e10e4600ac
+Description: The VyOS Shell based on GNU bash
+ The VyOS Shell based on GNU Bourne Again SHell.
+ .
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ Bash is ultimately intended to be a conformant implementation of the
+ IEEE POSIX Shell and Tools specification (IEEE Working Group 1003.2).
+
+Package: vyatta-biosdevname
+Version: 1:0.3.11+vyos1+helium2
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 104
+Depends: libc6 (>= 2.7), libpci3 (>= 1:3.1.7), zlib1g (>= 1:1.1.4)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-biosdevname/vyatta-biosdevname_0.3.11+vyos1+helium2_armel.deb
+Size: 19904
+SHA256: 01adba69c6d0adc2bb04b7df46793dee081a07a2b958e1ac82b22e33a061030b
+SHA1: 472c125b131f44b8b9efe737844689b23feaa577
+MD5sum: e45a657534f6de69480549768c2e8ee5
+Description: VyOS version of the biosdevname utility.
+ Provides biosdevname which takes a kernel device name as an
+ argument, and returns the BIOS-given name it "should" be.  This is
+ necessary on systems where the BIOS name for a given device (e.g. the
+ label on the chassis is "Gb1") doesn't map directly and obviously to
+ the kernel name (e.g. eth0).
+
+Package: vyatta-busybox
+Version: 1.19.0-1+vyos1+helium2
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 572
+Depends: libc6 (>= 2.4), libpam0g (>= 0.99.7.1)
+Replaces: busybox
+Provides: busybox
+Priority: optional
+Section: utils
+Filename: pool/main/v/vyatta-busybox/vyatta-busybox_1.19.0-1+vyos1+helium2_armel.deb
+Size: 327296
+SHA256: 1c9c8b765d775cb5431c4d187438d7564f7ee31d5aee306c89edfe6a025b3ea8
+SHA1: 3a272517bd29aaa8c7fa6929672947211ef6e233
+MD5sum: edbd1ee9a84d286d386ac77fe9b27c83
+Description: Tiny utilities for small and embedded systems
+ BusyBox combines tiny versions of many common UNIX utilities into a single
+ small executable. It provides minimalist replacements for the most common
+ utilities you would usually find on your desktop system (i.e., ls, cp, mv,
+ mount, tar, etc.). The utilities in BusyBox generally have fewer options than
+ their full-featured GNU cousins; however, the options that are included
+ provide the expected functionality and behave very much like their GNU
+ counterparts.
+ .
+ This package installs the BusyBox binary but does not install
+ symlinks for any of the supported utilities. Some of the utilities
+ can be used in the system by installing the busybox-syslogd,
+ busybox-udhcpc or busybox-udhcpd packages.
+
+Package: vyatta-cfg
+Version: 0.102.0+vyos1+helium9
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 448
+Depends: sed (>= 4.1.5), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-bash | bash (>= 4.1), vyatta-unicast | vyatta-quagga | quagga, vyatta-op, vyatta-config-migrate, vyatta-cfg-system (>= 0.18), parted, dhcp3-client | vyatta-dhcp3-client, bsdutils (>= 1:2.13), vlan, ethtool, iproute, curl, libsocket6-perl, libvyatta-cfg1 (= 0.102.0+vyos1+helium9), unionfs-fuse, perl, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libstdc++6 (>= 4.3.0)
+Suggests: util-linux (>= 2.13-5), net-tools, ncurses-bin (>= 5.5-5), ntpdate
+Replaces: vyatta-cfg-firewall, vyatta-cfg-quagga
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg/vyatta-cfg_0.102.0+vyos1+helium9_armel.deb
+Size: 95772
+SHA256: 7d7de2c7dd29e256dfb99db2db2f073ae1ef8c80381626c8eedab3efc030a74c
+SHA1: 4bbcabea97d4eec55962095401645d6acbf3e229
+MD5sum: 97e32ceadc45e470dbd3a27ee2d57dcb
+Description: VyOS configuration system
+ This package provides the VyOS configuration system, including the base
+ configuration templates and the config-mode CLI completion mechanism.
+
+Package: vyatta-cfg-dhcp-relay
+Version: 0.11.0+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 328
+Depends: vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), vyatta-dhcp3-relay (>= 3.0.6.dfsg-1), sed (>= 4.1.5), perl (>= 5.8.8), libnetaddr-ip-perl (>= 4.007+dfsg-1), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), busybox, sudo
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-dhcp-relay/vyatta-cfg-dhcp-relay_0.11.0+vyos1+helium2_all.deb
+Size: 12652
+SHA256: a876321e5c4c41c8db5ddb35b8026e37ac7cb155bb7a6105baef0ab0d65f64f5
+SHA1: f563617eef9726d1eb82048f6239e87046863034
+MD5sum: ace5bd8bdc58229731a7f221e7afc7e4
+Description: Vyatta DHCP-relay-level configuration templates and scripts
+ Vyatta DHCP-relay-level configuration templates and scripts.
+
+Package: vyatta-cfg-dhcp-server
+Version: 0.12.36+vyos1+helium5
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 832
+Depends: vyatta-dhcp3-server (>= 3.0.6.dfsg-1), vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), sed (>= 4.1.5), perl (>= 5.8.8), libnetaddr-ip-perl (>= 4.007+dfsg-1), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), sysv-rc, ntp, rsyslog | system-log-daemon, busybox, sudo, snmpd
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-dhcp-server/vyatta-cfg-dhcp-server_0.12.36+vyos1+helium5_all.deb
+Size: 29966
+SHA256: 276aaced0b4092d0fb461222f87181359e5c6976aa4ec5ecbd2894f9a31a76a7
+SHA1: 8d02ec18d6dc650cfb26bd2f348cd4e99b821d9e
+MD5sum: 1c48bf2e9205162a516f955e21b4de06
+Description: Vyatta DHCP-server-level configuration templates and scripts
+ Vyatta DHCP-server-level CLI configuration templates and scripts.
+
+Package: vyatta-cfg-firewall
+Version: 0.13.91+vyos1+helium8
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 5072
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-cfg (>= 0.15.33), vyatta-cfg-system (>= 0.19.125), vyatta-bash | bash (>= 3.1), vyatta-util, sysv-rc, ntp, rsyslog | system-log-daemon, busybox, whois, sudo, snmpd, ipset
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Replaces: vyatta-cfg-system, vyatta-openvpn, vyatta-serial, vyatta-wirelessmodem
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-firewall/vyatta-cfg-firewall_0.13.91+vyos1+helium8_all.deb
+Size: 102968
+SHA256: e3a59b07de91f80b614aaf56a0083c919931f37a25ef89ce9d486e18a5e24187
+SHA1: b30c8a521239392e70d92e14443668471d896af8
+MD5sum: 4186fe1d85501f8eb1b4cd258a435cd0
+Description: Vyatta firewall configuration templates/scripts
+ Vyatta firewall configuration templates and scripts.
+
+Package: vyatta-cfg-firewall-serial
+Source: vyatta-cfg-firewall
+Version: 0.13.91+vyos1+helium8
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 1020
+Depends: vyatta-cfg-firewall, vyatta-serial
+Replaces: vyatta-cfg-firewall
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-firewall/vyatta-cfg-firewall-serial_0.13.91+vyos1+helium8_all.deb
+Size: 24118
+SHA256: 4347080fda9d2381ca0d7c577633eddc8175ad5f65e2cd43cb26b7b80d7b09a9
+SHA1: f153abb4e478eb3e37375d214a54076a0cc1e752
+MD5sum: ded929034303a630a8a7f4d86160cf56
+Description: vyatta-cfg-firewall serial templates
+ Vyatta firewall configuration templates for serial devices
+
+Package: vyatta-cfg-op-pppoe
+Version: 0.11.20+vyos1+helium4
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 580
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-cfg, vyatta-op, vyatta-bash | bash (>= 3.1), sysv-rc, sudo, pppoe
+Suggests: util-linux (>= 2.13-5)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-op-pppoe/vyatta-cfg-op-pppoe_0.11.20+vyos1+helium4_all.deb
+Size: 17750
+SHA256: 0c8e617d484b8648191ea31ff012051c9c766cfbf6693b63da24d7fc677f7fd2
+SHA1: 03dcbefb929c021b3dc308b91607b0d1d6cb01f0
+MD5sum: 37d773d92ca2a5c172949653d02764f4
+Description: Vyatta config and op mode templates for PPPOE
+ This package contains config and op mode templates for PPP over Ethernet
+
+Package: vyatta-cfg-qos
+Version: 0.15.42+vyos1+helium4
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 2624
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), iproute | vyatta-iproute, bridge-utils, ethtool
+Suggests: util-linux (>= 2.13-5), net-tools
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-qos/vyatta-cfg-qos_0.15.42+vyos1+helium4_all.deb
+Size: 58060
+SHA256: 75fe8f06a044e13217e57e1622072641a66900458bd00fd7f76242767c8e5809
+SHA1: aabde648c1e5c3f8b53dccfe7c43404cdfdde1f5
+MD5sum: e2e0d385568f41340e2605ffbeef875a
+Description: Vyatta Qos configuration templates/scripts
+ Vyatta Qos configuration templates and scripts.
+
+Package: vyatta-cfg-qos-serial
+Source: vyatta-cfg-qos
+Version: 0.15.42+vyos1+helium4
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 444
+Depends: vyatta-cfg-qos, vyatta-serial
+Replaces: vyatta-cfg-qos
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-qos/vyatta-cfg-qos-serial_0.15.42+vyos1+helium4_all.deb
+Size: 14048
+SHA256: dce05cc1a6ddb8fabad7e56529613905ad1131918288ce0ac921c001a3a24a5d
+SHA1: ecbfbbf8ed064ffe947ffb02c57caec0c9fd3e9f
+MD5sum: cd6fc84e8dde20dff871c26c1abe8936
+Description: vyatta-cfg-qos serial templates
+ Vyatta Qos configuration templates for serial devices
+
+Package: vyatta-cfg-quagga
+Version: 0.19.0+vyos1+helium8
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 14244
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-cfg (>= 0.18.56), vyatta-cfg-system (>= 0.19.125), libc6 (>= 2.7-6), vyatta-bash | bash (>= 3.1), vyatta-unicast | vyatta-quagga (>= 0.99.15-26)
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-quagga/vyatta-cfg-quagga_0.19.0+vyos1+helium8_armel.deb
+Size: 236608
+SHA256: 986a3e34d291b8b307f30c8496217e9b5ba0343fc6ba9227f342c94dc6d7486c
+SHA1: 863c2b4587bec4257d7324af3e8ab5f9505d119f
+MD5sum: f33dff25b90926641d00b8dacad8d350
+Description: Vyatta configuration templates/scripts for Quagga
+ Vyatta configuration templates and scripts for Quagga
+
+Package: vyatta-cfg-quagga-dataplane
+Source: vyatta-cfg-quagga
+Version: 0.19.0+vyos1+helium8
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 772
+Depends: vyatta-cfg-quagga, vyatta-cfg-dataplane
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-quagga/vyatta-cfg-quagga-dataplane_0.19.0+vyos1+helium8_all.deb
+Size: 28220
+SHA256: bb35cdfa0f729dcc493ca7ef8ff85d1df29bca7b99351b37a36c4f8457616f06
+SHA1: 98386fd55418ac4bb647d59ad55f84b4c00008b4
+MD5sum: 2980cc9c8c2b09df80c540557b2adf41
+Description: vyatta-cfg-quagga dataplane templates
+ Vyatta configuration templates for Quagga use on dataplane devices
+
+Package: vyatta-cfg-quagga-serial
+Source: vyatta-cfg-quagga
+Version: 0.19.0+vyos1+helium8
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 2884
+Depends: vyatta-cfg-quagga, vyatta-serial
+Replaces: vyatta-cfg-quagga
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-quagga/vyatta-cfg-quagga-serial_0.19.0+vyos1+helium8_all.deb
+Size: 60466
+SHA256: e599fa8a5ad490d38e3ce565429222846580f6b164706b770ef773837d841a50
+SHA1: f048640be56c19569d272e42aeffb41d2699b2c2
+MD5sum: 7eeec54ea717078b755f50c7f0c8e823
+Description: vyatta-cfg-quagga serial templates
+ Vyatta configuration templates for Quagga use on serial devices
+
+Package: vyatta-cfg-system
+Version: 0.20.43+vyos1+helium23
+Architecture: armel
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 5104
+Pre-Depends: bash-completion
+Depends: acpid, adduser, dialog, sed (>= 4.1.5), perl (>= 5.10.1), libnetaddr-ip-perl, procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), libpam-radius-auth, vyatta-cfg (>= 0.100.1), libc6 (>= 2.7-6), libpam-runtime (>= 1.0.1-5), vyatta-bash | bash (>= 3.1), sysv-rc, ntp (>= 4.2.4p6+vyatta-7), udev (>= 160-1), rsyslog | system-log-daemon, vyatta-busybox, sudo, snmpd (>= 5.4.2.1-vyatta11), vyatta-keepalived (>= 1.1.15-1-vyatta-5), bridge-utils, ethtool, ssh (>= 1:5.1p1-5), openssh-server (>= 1:5.1p1-5), ed, ifupdown, tshark, iputils-arping, installation-report, laptop-detect, usbutils, mgetty, tasksel, snmp, tcpdump, dnsmasq (>= 2.45-1+lenny1), mdadm, ddclient (>= 3.7.3-4.2), libio-socket-ssl-perl, vyatta-biosdevname, ipvsadm (>= 1:1.24-2.1), radvd (>= 1:1.1-3), apt-transport-https, hostapd (>= 1:0.6.9-3), cpufrequtils, libcap2-bin (>= 2.19)
+Suggests: util-linux (>= 2.13-5), net-tools, ncurses-bin (>= 5.5-5), ntpdate
+Replaces: vyatta-cfg (<< 0.17.33), vyatta-cfg-quagga (<< 0.18.17)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-system/vyatta-cfg-system_0.20.43+vyos1+helium23_armel.deb
+Size: 267702
+SHA256: fe962297114c3b9448adc2f13fb70d321edbbe92da3605a0eecf8ae37d7699f4
+SHA1: e65ac50eb097edc912614c94d4e386060e06cf57
+MD5sum: 9509a71cd41203ef92ab598380938060
+Description: Vyatta system-level configuration
+ Vyatta system-level configuration utiliites, templates and scripts.
+
+Package: vyatta-cfg-vpn
+Version: 0.12.105+vyos1+helium3
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1000
+Depends: perl, vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), vyatta-ipsec, libc6 (>= 2.7-6)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cfg-vpn/vyatta-cfg-vpn_0.12.105+vyos1+helium3_armel.deb
+Size: 53342
+SHA256: 29d2f59f3c869109017cb675c9fa4b1f11157c1f46e70054bf4558c28cbb184b
+SHA1: b22aabaf4d09eb5c5c10e6ba057d5827b8c437cc
+MD5sum: f58f4448e0ff3e6eab01a9d100b2966d
+Description: Vyatta VPN configuration templates/scripts
+ Vyatta VPN configuration templates and scripts.
+
+Package: vyatta-cluster
+Version: 0.11.25+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 368
+Depends: vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), vyatta-op, heartbeat (>= 2.1.2-1)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cluster/vyatta-cluster_0.11.25+vyos1+helium1_all.deb
+Size: 19460
+SHA256: e6868ce404569f8e8dc178000a58759e0ba2e6dee0d23f68ea7997fbf4e47a74
+SHA1: d625841c35627bbbd2f370e7ffaf778a3fa71214
+MD5sum: 84712daf4c4e69e6d0f5f11e569cb7ce
+Description: Vyatta configuration/operational commands for clustering
+ Vyatta configuration and operational templates and scripts for clustering
+
+Package: vyatta-config-mgmt
+Version: 0.34+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 276
+Depends: perl, vyatta-cfg (>= 0.15.33), vyatta-cfg-system, vyatta-op
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-config-mgmt/vyatta-config-mgmt_0.34+vyos1+helium1_all.deb
+Size: 12366
+SHA256: 30ff7cad4906ee8981c1a8b9de82d47e779e55172d88cfb0c1cd6e0f9ccea7b0
+SHA1: e3d78adfc96b75e031bf6603196eae6cb5c41ae5
+MD5sum: b3192dce4c51bd3ea8e184ae7635a1ec
+Description: Vyatta commands for config-mgmt
+ Vyatta configuration/operational templates and scripts for the config management  system.
+
+Package: vyatta-config-migrate
+Version: 0.13.65+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 556
+Depends: bash (>= 3.1), sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-config-migrate/vyatta-config-migrate_0.13.65+vyos1+helium1_all.deb
+Size: 37910
+SHA256: b68602030dd2a00fd25282f36a4d3746fd01a150855118032c890eca34a08f8a
+SHA1: f8024ac2d96793e120317f762f9ec43732514052
+MD5sum: 15e0d8b20017814722beac856d2760b8
+Description: Vyatta configuration migration
+ Vyatta configuration migration scripts.
+
+Package: vyatta-conntrack
+Version: 0.54+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 1332
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op, conntrack
+Replaces: vyatta-cfg-firewall, vyatta-cfg-system
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-conntrack/vyatta-conntrack_0.54+vyos1+helium1_armel.deb
+Size: 39588
+SHA256: 4114e0485eea53f87f184537f6e38e66478722fcfb905bcc414bb4df1bebb439
+SHA1: 6bbd66d94d3be6c7e8ea325ffb51966625ce0892
+MD5sum: 1f57a64ebf0755b3823d27f31f29d867
+Description: Vyatta conntrack configuration
+ Vyatta conntrack configuration utiliites, templates and scripts.
+
+Package: vyatta-conntrack-sync
+Version: 0.46+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 432
+Depends: perl (>= 5.8.8), vyatta-bash | bash (>= 3.1), conntrack (>= 0.9.14), conntrackd (>= 0.9.14), libnetfilter-conntrack3 (>= 0.0.100-1~bpo50+1), libnfnetlink0 (>= 1.0.0-1~bpo50+1)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-conntrack-sync/vyatta-conntrack-sync_0.46+vyos1+helium1_armel.deb
+Size: 20478
+SHA256: 6915ec324197f10b7159f53a2867dbd37050173a46d0ee6879d62a697f822902
+SHA1: 82bd11d9c070962f18b52f82201531499a8d27c5
+MD5sum: fb576b84b58240fc4ea87919a229fccf
+Description: The vyatta-conntrack-sync package
+ This package has the vyatta-conntrack-sync programs, and vyatta
+ configuration/operational templates and scripts.
+
+Package: vyatta-cron
+Version: 1.0.3+vyos1+helium9
+Architecture: all
+Maintainer: SO3 Group <maintainers@so3group.net>
+Installed-Size: 204
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op, cron
+Replaces: vyatta-cron
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-cron/vyatta-cron_1.0.3+vyos1+helium9_all.deb
+Size: 6072
+SHA256: a499c23160f535697bc97e7306d5f95089e8f2aa513eb69fc371b25a55c9c953
+SHA1: ad3090056dbf1108d86879b19e8bfbbcd9d752c5
+MD5sum: d3d2f357b00c6d0606bccb0514fcf389
+Description: Vyatta task scheduler configuration
+ Vyatta task scheduler configuration utiliites, templates and scripts.
+
+Package: vyatta-dhcp3-client
+Source: vyatta-dhcp3
+Version: 4.1.8+vyos1+helium2
+Architecture: armel
+Maintainer: VyOs Maintainers <maintainers@so3group.net>
+Installed-Size: 652
+Depends: debianutils (>= 2.8.2), vyatta-dhcp3-common (= 4.1.8+vyos1+helium2), libc6 (>= 2.4), debconf (>= 0.5) | debconf-2.0
+Suggests: resolvconf, avahi-autoipd
+Conflicts: dhcp-client (<< 3.0), dhcp3-client, samba-common (<< 3.0.0beta1-2)
+Priority: important
+Section: net
+Filename: pool/main/v/vyatta-dhcp3/vyatta-dhcp3-client_4.1.8+vyos1+helium2_armel.deb
+Size: 276610
+SHA256: 4d488a87eb23b204eb01013f7b92c14d2d612994ac53ffeb3ecc68014656d37d
+SHA1: 984231b67ad77db8a1ac635890652bc949c5d964
+MD5sum: b0f3448b58d1f9b2988dc4aab7a83010
+Description: Vyattanized DHCP client
+ This is the client from version 3 of the Internet Software
+ Consortium's implementation of DHCP. For more information visit
+ http://www.isc.org.
+ .
+ Dynamic Host Configuration Protocol (DHCP) is a protocol like BOOTP
+ (actually dhcpd includes much of the functionality of bootpd). It
+ gives client machines "leases" for IP addresses and can
+ automatically set their network configuration. If your machine
+ depends on DHCP (especially likely if it's a workstation on a large
+ network, or a laptop, or attached to a cable modem), keep this or
+ another DHCP client installed.
+ .
+ Extra documentation can be found in the package dhcp3-common.
+
+Package: vyatta-dhcp3-common
+Source: vyatta-dhcp3
+Version: 4.1.8+vyos1+helium2
+Architecture: armel
+Maintainer: VyOs Maintainers <maintainers@so3group.net>
+Installed-Size: 608
+Depends: debianutils (>= 2.8.2), libc6 (>= 2.4)
+Conflicts: dhcp3-common
+Priority: important
+Section: net
+Filename: pool/main/v/vyatta-dhcp3/vyatta-dhcp3-common_4.1.8+vyos1+helium2_armel.deb
+Size: 332890
+SHA256: dc671b5129b9dc8d781a0c9a870ca995af80abf1a6dccd90d3b421e524b5e90d
+SHA1: 59a4ef20e69d1329d223397b6009c5a42520b654
+MD5sum: fad0229ea92f09e83c4fc14969a24ed3
+Description: Vyattanized common files used by all the vyatta-dhcp3* packages
+ This package contains the files used by all the packages from the
+ Vyattanized ISC DHCP version 3.
+
+Package: vyatta-dhcp3-relay
+Source: vyatta-dhcp3
+Version: 4.1.8+vyos1+helium2
+Architecture: armel
+Maintainer: VyOs Maintainers <maintainers@so3group.net>
+Installed-Size: 504
+Depends: debianutils (>= 2.8.2), vyatta-dhcp3-common (= 4.1.8+vyos1+helium2), libc6 (>= 2.4), debconf (>= 0.5) | debconf-2.0
+Conflicts: dhcp-relay, dhcp3-relay
+Priority: optional
+Section: net
+Filename: pool/main/v/vyatta-dhcp3/vyatta-dhcp3-relay_4.1.8+vyos1+helium2_armel.deb
+Size: 211298
+SHA256: a2af18ae5414e14af56295845a098058c07d8419cc52dcb112d2cf41a10c7d25
+SHA1: 19688370fbb07b3a03004589cd55a65d5c1f8c3a
+MD5sum: 7504313bee837d766eb6ff88a0ac0d02
+Description: Vyattanized DHCP relay daemon
+ This is the relay from version 3 of the Internet Software
+ Consortium's implementation of DHCP. For more information visit
+ http://www.isc.org.
+ .
+ Installing this package will make the machine a DHCP relay, which
+ requires a reachable DHCP or BOOTP server in order to function.
+ .
+ Extra documentation can be found in the package dhcp3-common.
+
+Package: vyatta-dhcp3-server
+Source: vyatta-dhcp3
+Version: 4.1.8+vyos1+helium2
+Architecture: armel
+Maintainer: VyOs Maintainers <maintainers@so3group.net>
+Installed-Size: 892
+Depends: debianutils (>= 2.8.2), vyatta-dhcp3-common (= 4.1.8+vyos1+helium2), vyatta-unicast | vyatta-quagga (>= 0.99.15-26), libc6 (>= 2.4), debconf (>= 0.5) | debconf-2.0
+Conflicts: dhcp, dhcp3-server
+Priority: optional
+Section: net
+Filename: pool/main/v/vyatta-dhcp3/vyatta-dhcp3-server_4.1.8+vyos1+helium2_armel.deb
+Size: 414574
+SHA256: 8e733993a1629a297ae6464798e561b6e2439a4287e057d8c64eb53e07e55be7
+SHA1: 70a351734118ecefedc12cd71f65a943390fb36a
+MD5sum: 238794559d3d1a9245775fee3190ef63
+Description: Vyattanized DHCP server for automatic IP address assignment
+ This is the server from version 3 of the Internet Software
+ Consortium's implementation of DHCP. For more information, visit
+ http://www.isc.org.
+ .
+ Dynamic Host Configuration Protocol (DHCP) is a protocol like BOOTP
+ (actually dhcpd includes much of the functionality of bootpd). It
+ gives client machines "leases" for IP addresses and can
+ automatically set their network configuration.
+ .
+ This server can handle multiple ethernet interfaces.
+
+Package: vyatta-eventwatch
+Version: 0.1+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 212
+Depends: eventwatchd, vyatta-cfg, vyatta-bash | bash (>= 3.1), sudo
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-eventwatch/vyatta-eventwatch_0.1+vyos1+helium2_all.deb
+Size: 5426
+SHA256: b7a91dc9da2ecd1a19c6042ca2bb1da034094989caa3fbdb281124209872d9fa
+SHA1: 476aeb799a6c907d268ed71eceebcd4bb1652f10
+MD5sum: 9279d9505f8906c7de4ecd9c4b7a9a8c
+Description: Vyatta/VyOS/EdgeOS eventwatchd integration package
+ This package contains config and op mode templates for eventwatchd integration
+
+Package: vyatta-ipv6-rtradv
+Version: 0.38+vyos1+helium5
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 3132
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), coreutils (>= 5.97-5.3), vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), sysv-rc, sudo, radvd
+Suggests: util-linux (>= 2.13-5)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-ipv6-rtradv/vyatta-ipv6-rtradv_0.38+vyos1+helium5_all.deb
+Size: 70144
+SHA256: 60f00d707cf1fc3c156e5e5398f20f1e6c33415539c725b88f8dc4a480f16747
+SHA1: 768c89c4bac1270c58ca3dc619d2eea139a4468d
+MD5sum: 81006eeea9ceb9db0ab12593fd7810ae
+Description: Vyatta config and op mode templates for IPv6 Router Advertisements
+ Vyatta config and op mode templates for Router Advertisements
+
+Package: vyatta-ipv6-rtradv-serial
+Source: vyatta-ipv6-rtradv
+Version: 0.38+vyos1+helium5
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 1708
+Depends: vyatta-ipv6-rtradv, vyatta-serial
+Replaces: vyatta-ipv6-rtradv
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-ipv6-rtradv/vyatta-ipv6-rtradv-serial_0.38+vyos1+helium5_all.deb
+Size: 37330
+SHA256: 0fbbc586f556db0f4cfc49409706b770e050344e6adedbadf8b013248e3a5027
+SHA1: 66fd337e81ec9ac9bd906e024a4d6bde1acf848b
+MD5sum: 99896ebb8aeb7d8dafd6e105e3b48f7f
+Description: vyatta-ipv6-rtradv serial templates
+ Vyatta configuration templates for IPv6 Router Advertisements
+ for serial devices
+
+Package: vyatta-keepalived
+Version: 1.2.2-1+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 712
+Depends: libc6 (>= 2.7), libpopt0 (>= 1.16), libsnmp15, libssl0.9.8 (>= 0.9.8m-1), ipvsadm, iproute
+Replaces: keepalived
+Priority: optional
+Section: admin
+Filename: pool/main/v/vyatta-keepalived/vyatta-keepalived_1.2.2-1+vyos1+helium1_armel.deb
+Size: 179282
+SHA256: 98ff8fdaf3b56b5dddbd3ba5bf8bb8d7a03ad7404ba8fe6d1c4d88ae3e086bb2
+SHA1: a6dc9f32c56448155873a537e9f319aef4e69d6e
+MD5sum: d8a8f2e18ccbb223ab82202d173b2719
+Description: Failover and monitoring daemon for LVS clusters
+ keepalived is used for monitoring real servers within a Linux
+ Virtual Server (LVS) cluster.  keepalived can be configured to
+ remove real servers from the cluster pool if it stops responding,
+ as well as send a notification email to make the admin aware of
+ the service failure.
+ .
+ In addition, keepalived implements an independent Virtual Router
+ Redundancy Protocol (VRRPv2; see rfc2338 for additional info)
+ framework for director failover.
+ .
+ You need a kernel >= 2.4.28 or >= 2.6.11 for keepalived.
+ See README.Debian for more information.
+
+Package: vyatta-lldp
+Version: 0.25+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 356
+Depends: perl (>= 5.8.8), vyatta-bash | bash (>= 3.1), lldpd
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-lldp/vyatta-lldp_0.25+vyos1+helium1_armel.deb
+Size: 11550
+SHA256: 8f1e6a722385fbe5aeb331891c8d8e74f8c02bc0506c53d06853fda6070c66c7
+SHA1: dc8c526ec352283dc2d1972b7fbeea5eadb64113
+MD5sum: 17bcbdd6535fac48ec5197eae011b9d6
+Description: The vyatta-lldp package
+ This package has the vyatta-lldp programs, and vyatta
+ configureation/operational templates and scripts.
+
+Package: vyatta-nat
+Version: 0.13.0+vyos1+helium2
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 688
+Depends: vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), vyatta-op, iptables, conntrack, libxml-simple-perl
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-nat/vyatta-nat_0.13.0+vyos1+helium2_all.deb
+Size: 25192
+SHA256: 6f3a05cc350c7fdd7823b188c11d05de36d6c2908a42dd8697626e5e9a5f2c52
+SHA1: 4d78d930559b0ea83b950ac3f02e82a021aed6f8
+MD5sum: 73d03ab4b3205272fb4ded8e28a78fc5
+Description: Vyatta configuration/operational commands for NAT
+ Vyatta configuration and operational templates and scripts for NAT
+
+Package: vyatta-netflow
+Version: 0.42+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 456
+Depends: perl, vyatta-cfg, vyatta-cfg-system, vyatta-op, pmacct (>= 0.14.0)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-netflow/vyatta-netflow_0.42+vyos1+helium1_all.deb
+Size: 17026
+SHA256: 8964c608024db3ff3e5bfd72f2ccca6c9df7b8c85508271b59030b7e7eec5c55
+SHA1: 9ceacea10f8e747ed43d24368d209298f20af812
+MD5sum: 40909880c6b307310901875477a61065
+Description: Vyatta commands for netflow
+ Vyatta configuration/operational templates and scripts for the netflow/sflow
+ system (pmacct).
+
+Package: vyatta-op
+Version: 0.14.0+vyos1+helium17
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 7300
+Depends: sed (>= 4.1.5), console-setup, console-terminus, bmon, iftop, ethtool, traceroute, ntpdate, procps (>= 1:3.2.7-3), pciutils, vyatta-cfg (>= 0.16.26), vyatta-cfg-system (>= 0.19.93), vyatta-unicast | vyatta-quagga (>= 0.99.15-26), lsof, coreutils (>= 5.97-5.3), host, vyatta-bash | bash (>= 4.1), less, libio-prompt-perl, mail-transport-agent, at, net-tools, libtimedate-perl, usbutils, lsscsi
+Suggests: util-linux (>= 2.13-5), ncurses-bin (>= 5.5-5), dialog
+Replaces: vyatta-serial
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op/vyatta-op_0.14.0+vyos1+helium17_all.deb
+Size: 154782
+SHA256: 53d149bc387581d5c4a5d01c871f4b0a8528c5c877827d2079d109838c96e608
+SHA1: 0e084b214b02677348e9b0bf690ca3079fb07c20
+MD5sum: 6b1a64996ce23e78f0895f43759376a6
+Description: bash operational command completion
+ Vyatta operational command bash completion script and base templates
+
+Package: vyatta-op-dhcp-server
+Version: 0.14.0+vyos1+helium3
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 340
+Depends: libc6, vyatta-op, vyatta-bash | bash (>= 3.1), perl, vyatta-dhcp3-server (>= 3.0.6.dfsg-1), libfile-slurp-perl
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op-dhcp-server/vyatta-op-dhcp-server_0.14.0+vyos1+helium3_all.deb
+Size: 13754
+SHA256: a244c76d45218988fd1175490bb9ea54b6200a1d70b25fd0d7603fafabd3e9ef
+SHA1: fadd7ffe8304dc49b68bd8d9b9d36e58e55c5413
+MD5sum: 04b8dde37dc71457c52a91e031116675
+Description: Vyatta operational commands for DHCP server
+ Vyatta CLI operational commands for the vyatta modifiied DHCP server.
+
+Package: vyatta-op-firewall
+Version: 0.11.0+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 688
+Depends: vyatta-op, vyatta-bash | bash (>= 3.1), vyatta-cfg (>= 0.101.0), xsltproc
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op-firewall/vyatta-op-firewall_0.11.0+vyos1+helium1_all.deb
+Size: 23200
+SHA256: aaf9a61775a1ad9d5066f6202b7287ae0547fe37f50708a6bf4fcdb9ea9ea378
+SHA1: 9cc2a25087ab181aef9c359d379f2cde586cf0c7
+MD5sum: 394488da345c04e34e29e0c178621d20
+Description: Vyatta operational commands for firewall.
+ This package contains Vyatta operational commands for firewalling.
+
+Package: vyatta-op-qos
+Version: 0.12.27+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 752
+Depends: vyatta-op, vyatta-bash | bash (>= 3.1), iproute | vyatta-iproute, libtree-simple-perl
+Suggests: util-linux (>= 2.13-5), ethtool
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op-qos/vyatta-op-qos_0.12.27+vyos1+helium1_all.deb
+Size: 14332
+SHA256: db59762dc58c00eddc6c35c5ef0fb6aebf59d1a2b2b670be1a68271a1b1daa38
+SHA1: 2b492a0daf822d592475bdefe9a1f4950e15334e
+MD5sum: bc9c898532eed00685cd1125d9d7bab1
+Description: Vyatta operational commands for QOS
+ Vyatta operational commands for Quality of Service.
+
+Package: vyatta-op-quagga
+Version: 0.11.34+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 10608
+Depends: vyatta-op, vyatta-bash | bash (>= 3.1), vyatta-unicast | vyatta-quagga (>= 0.99.15-26)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op-quagga/vyatta-op-quagga_0.11.34+vyos1+helium1_all.deb
+Size: 82570
+SHA256: 46481c3aaa195cff25381eb1ed706554127d19b24ab383ddb63b52c3c0f8b20b
+SHA1: 61d38866abad559bfa4e4ddb0caf88bcc1c6403e
+MD5sum: fb0ddb889ec6ef8736c162bacac2144f
+Description: Vyatta operational command for the Quagga route daemons
+ Bash command completions, help strings, and run definitions
+
+Package: vyatta-op-vpn
+Version: 0.14.0+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyos.net>
+Installed-Size: 788
+Depends: vyatta-op, vyatta-bash | bash (>= 3.1), vyatta-cfg-vpn, vyatta-ipsec
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-op-vpn/vyatta-op-vpn_0.14.0+vyos1+helium1_all.deb
+Size: 32268
+SHA256: 405027f0742516ce73dc04c0c708b40f3cb8ec77d946bb9413a7202a0ab26e84
+SHA1: 52a1401deb89fd329d19f27a2ff8f9e58b6cbb40
+MD5sum: 1c8c4a320cf14fe2f237209263ec2d66
+Description: Vyatta operational commands for VPN
+ Vyatta commands to operate openswan VPN.
+
+Package: vyatta-openvpn
+Version: 0.2.60+vyos1+helium3
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 900
+Depends: perl, vyatta-cfg (>= 0.15.33), vyatta-op, vyatta-bash | bash (>= 3.1), openvpn
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-openvpn/vyatta-openvpn_0.2.60+vyos1+helium3_all.deb
+Size: 27812
+SHA256: 617882e35e0892f908ebc8ba523d963f0f46600d6d775774381a1780cc9df874
+SHA1: e1b8d5d7d62fffdaca9d918a06f00bca5dfdfdde
+MD5sum: 3da3536bc0b27723b98a1c4c15b4bbbd
+Description: Vyatta OpenVPN configuration/operational commands
+ Vyatta configuration/operational templates and scripts for OpenVPN
+
+Package: vyatta-ppp
+Version: 2.4.4rel-8+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 964
+Depends: libpam-modules, libpam-runtime (>= 0.76-13.1), netbase, procps, libc6
+Suggests: iptables
+Conflicts: makedev (<< 2.3.1-56), ppp-pam, ppp-udeb, pppdcapiplugin (<= 1:3.7.2005-07-09-2)
+Replaces: ppp, ppp-pam, ppp-udeb
+Provides: ppp
+Priority: optional
+Section: admin
+Filename: pool/main/v/vyatta-ppp/vyatta-ppp_2.4.4rel-8+vyos1+helium1_armel.deb
+Size: 328472
+SHA256: 04ad135a814e942a8fd94efd13776f7843741b202cc076d27c6a61a064f7454e
+SHA1: 5f0b33f52c1698f50a9c04334d2b57bb36c7bcd6
+MD5sum: b4d15a1fc8f300b0b33643939910e385
+Description: Point-to-Point Protocol (PPP) daemon
+ The Point-to-Point Protocol (PPP) provides a standard way to transmit
+ datagrams over a serial link, as well as a standard way for the machines
+ at either end of the link (the "peers") to negotiate various optional
+ characteristics of the link.  Using PPP, a serial link can be used to
+ transmit Internet Protocol (IP) datagrams, allowing TCP/IP connections
+ between the peers.
+
+Package: vyatta-quagga
+Version: 0.99.20.1-13+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 5092
+Pre-Depends: adduser
+Depends: libc6 (>= 2.11), libcap2, libncurses5 (>= 5.7+20100313), libpam0g (>= 0.99.7.1), libreadline6 (>= 6.0), libsnmp15, libssl0.9.8 (>= 0.9.8m-1), logrotate (>= 3.2-11), iproute
+Suggests: snmpd
+Conflicts: quagga, zebra, zebra-pj
+Replaces: quagga, zebra, zebra-pj
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-quagga/vyatta-quagga_0.99.20.1-13+vyos1+helium1_armel.deb
+Size: 1549110
+SHA256: d341f3cd00daeb93528b8d1883164dc3a667ad37d4fc785bad20aa6934756f1a
+SHA1: 4be7463a6b0e78fc2baddd139b00594018cc8e68
+MD5sum: 53c431b31ae4a6ad7f8a0389502d20b9
+Description: BGP/OSPF/RIP routing daemon
+ GNU Quagga is free software which manages TCP/IP based routing protocols.
+ It supports BGP4, BGP4+, OSPFv2, OSPFv3, IS-IS, RIPv1, RIPv2, and RIPng as
+ well as the IPv6 versions of these.
+ .
+ As the precessor Zebra has been considered orphaned, the Quagga project
+ has been formed by members of the zebra mailing list and the former
+ zebra-pj project to continue developing.
+ .
+ Quagga uses threading if the kernel supports it, but can also run on
+ kernels that do not support threading. Each protocol has its own daemon.
+ .
+ It is more than a routed replacement, it can be used as a Route Server and
+ a Route Reflector.
+
+Package: vyatta-quagga-dbg
+Source: vyatta-quagga
+Version: 0.99.20.1-13+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 4276
+Priority: extra
+Section: debug
+Filename: pool/main/v/vyatta-quagga/vyatta-quagga-dbg_0.99.20.1-13+vyos1+helium1_armel.deb
+Size: 1637262
+SHA256: 4db2eb4020faf71a00f6a5c3a45a54256ac0511d881d4a0ae04f9e1563e44588
+SHA1: 3134ed7cafd43cdf4ea7b35326d8233e0c4f3cce
+MD5sum: 0020ba63aa93f446d502c4ca583a5ab7
+Description: BGP/OSPF/RIP debug symbols
+ Debug symbols for Quagga routing daemons
+
+Package: vyatta-ravpn
+Version: 0.12.44+vyos1+helium4
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 864
+Depends: perl, vyatta-cfg, vyatta-op, vyatta-cfg-vpn, vyatta-op-vpn, vyatta-bash | bash (>= 3.1), ppp, xl2tpd, pptpd, libradiusclient-ng2
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-ravpn/vyatta-ravpn_0.12.44+vyos1+helium4_all.deb
+Size: 27782
+SHA256: ed14fe41679d22c09b019c0cec66e7ebb10ac2582f13e7250a2c32979f2ae9ea
+SHA1: db2adf868c3cee9ab7bfc9aa41ef52e5b45fcdf0
+MD5sum: df000edd2b1564a4b1136b7a57088a49
+Description: Vyatta remote access VPN configuration/operational commands
+ Vyatta configuration/operational templates and scripts for remote access VPN
+
+Package: vyatta-util
+Version: 0.13+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 64
+Depends: libvyatta-util1 (= 0.13+vyos1+helium1)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-util/vyatta-util_0.13+vyos1+helium1_armel.deb
+Size: 6212
+SHA256: 3b0308760a208c572999112cf6c4e1d502ca5570b1f0393c1544de194bd182b3
+SHA1: 11897d48e097c64058a97daab56390c27efb5eea
+MD5sum: 41f4df22402304d967674354ef46bbbe
+Description: Various utilities
+
+Package: vyatta-vrrp
+Version: 0.11+vyos1+helium4
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 1624
+Depends: perl, vyatta-cfg (>= 0.99.83), vyatta-cfg-system (>= 0.20.8), vyatta-op (>= 0.13.259), vyatta-bash | bash (>= 3.1), vyatta-keepalived (>= 1.2.2)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-vrrp/vyatta-vrrp_0.11+vyos1+helium4_all.deb
+Size: 38586
+SHA256: 699f9a54ffd390c91e4844bb6fd72bfa501b10227cdd4ac05e28ca6d25e4ec71
+SHA1: af455c74502a8016a3d60eab0ea31f4d59f09645
+MD5sum: c8b3bd910c1a7f3df02f76672cab3f17
+Description: Vyatta VRRP configureation/operational commands
+ Vyatta configuration/operational templates and scripts for VRRP
+
+Package: vyatta-wanloadbalance
+Version: 0.13.68+vyos1+helium2
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 712
+Depends: sed (>= 4.1.5), perl (>= 5.8.8), procps (>= 1:3.2.7-3), vyatta-quagga | quagga, vyatta-cfg (>= 0.15.33), vyatta-cfg-firewall, vyatta-op, vyatta-bash | bash (>= 3.1), vyatta-config-migrate, coreutils (>= 5.97-5.3), libc6 (>= 2.7-1)
+Suggests: util-linux (>= 2.13-5), net-tools, ethtool, ncurses-bin (>= 5.5-5), ntpdate
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-wanloadbalance/vyatta-wanloadbalance_0.13.68+vyos1+helium2_armel.deb
+Size: 84148
+SHA256: f90b397c2b5f03353f68af350114d9fef7f6599afd75b0a9d32501448b171397
+SHA1: 884d1dce4716590ea92d0e7c6cadb5bf1d917c6f
+MD5sum: fb65a6a0cec6830204f827a1641ffd5f
+Description: Vyatta configuration system
+ This package has the Vyatta wan load balance project. It includes support for
+ the vyatta CLI for configuration.
+
+Package: vyatta-watchdog
+Version: 1.0.2+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 368
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op, watchdog
+Replaces: vyatta-watchdog
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-watchdog/vyatta-watchdog_1.0.2+vyos1+helium2_all.deb
+Size: 7998
+SHA256: e83ab37bfb87c607981262585829e272c9cfc933e8a4a4f6e324c1708840c66a
+SHA1: 1a440715be47221dbcccf355c5643c1a00ce26f0
+MD5sum: 848317cc5ba81a1872f41fb31c441dff
+Description: Vyatta watchdog configuration
+ Vyatta watchdog configuration utiliites, templates and scripts.
+
+Package: vyatta-webgui
+Version: 0.2.13-101+vyos1+helium1
+Architecture: armel
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 476
+Depends: libc6 (>= 2.4), libexpat1 (>= 1.95.8), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libpam0g (>= 0.99.7.1), libstdc++6 (>= 4.4.0), lighttpd, adduser, vyatta-cfg (>= 0.15.33), vyatta-op
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-webgui/vyatta-webgui_0.2.13-101+vyos1+helium1_armel.deb
+Size: 165374
+SHA256: 57714a517bf3b34b7ae564af934fa95f7a384727c31c9507bf231f22b9253832
+SHA1: c70ef72bcf78b3346329a7d32f4998df95b2b532
+MD5sum: 9ced9b28060dd54e79cc2c43b22127fc
+Description: Vyatta WebGUI
+ This package provides the Vyatta WebGUI.
+
+Package: vyatta-webproxy
+Version: 0.2.110+vyos1+helium4
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1092
+Depends: perl, vyatta-cfg (>= 0.15.33), vyatta-cfg-system, vyatta-op, squid3, squid3-client, squidguard
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-webproxy/vyatta-webproxy_0.2.110+vyos1+helium4_all.deb
+Size: 40732
+SHA256: 6c799ef69ae0fcc9ccef05521489339ce7fc850a00630fa2c7f8d5593da27b2d
+SHA1: 77a6c039e2682fbdf5a9ce84fbfd8f4586293df4
+MD5sum: ae4ba9d3b375cd44ff78c81a113426b6
+Description: VyOS commands for webproxy
+ VyOS configuration/operational templates and scripts for the webproxy
+ system (squid & squidguard).
+
+Package: vyatta-wireless
+Version: 0.3.41+vyos1+helium4
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 888
+Depends: vyatta-cfg (>= 0.15.33), vyatta-bash, vyatta-op, vyatta-cfg-system (>= 0.19.1), hostapd (>= 0.6.8), wpasupplicant (>= 0.6.7), iw, crda, wireless-regdb
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-wireless/vyatta-wireless_0.3.41+vyos1+helium4_all.deb
+Size: 26032
+SHA256: 21ea150f2e3b02359b7ac4b8e1cd8e2ecb54f8e773bd60388b84448c319dc257
+SHA1: 831c4a5533b921f0027e8a30be68f6607a3259a1
+MD5sum: 01729ed1c1411182584ea0e758a69f49
+Description: Vyatta configuration/operational commands for 802.11 wireless
+ Vyatta configuration and operational templates and scripts for 802.11 wireless
+ devices and access points.
+
+Package: vyatta-wirelessmodem
+Version: 0.1.24+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 268
+Depends: vyatta-cfg (>= 0.15.33), vyatta-bash | bash (>= 3.1), vyatta-op, vyatta-unicast | vyatta-quagga (>= 0.99.15-26)
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-wirelessmodem/vyatta-wirelessmodem_0.1.24+vyos1+helium2_all.deb
+Size: 8382
+SHA256: ebbed8a54ada21b86ea1cacb8d674d8a11b3c31e778fce412ac18ba294e2e24e
+SHA1: b963ada7010ac2d1b52dcd8ba5d88a28eb7cb5dd
+MD5sum: 7f41da35014d2a45431590408bc2b3c5
+Description: VyOS configuration/operational commands for USB 3G modems
+ Vyatta configuration and operational templates and scripts for USB 3G modems
+
+Package: vyatta-zone
+Version: 0.15+vyos1+helium1
+Architecture: all
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Installed-Size: 276
+Depends: perl (>= 5.8.8), vyatta-bash | bash (>= 3.1), vyatta-cfg, vyatta-cfg-firewall
+Replaces: vyatta-cfg, vyatta-cfg-system
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyatta-zone/vyatta-zone_0.15+vyos1+helium1_all.deb
+Size: 13098
+SHA256: 2cbe10c744b6ed5d15a7f7dc19871707fea25f40d6e0399ef8dc3587fcf860e5
+SHA1: 8e31cecff36b6542f479ee477797fc72fdfe7a48
+MD5sum: cdf4558471d6c5c3e31fe3bdeec6ea81
+Description: The vyatta-zone package
+ This package has the vyatta zone-policy programs, and
+ configuration/operational templates and scripts.
+
+Package: vyos-nhrp
+Version: 0.1.0+vyos1+helium2
+Architecture: all
+Maintainer: SO3 Group <maintainers@so3group.net>
+Installed-Size: 384
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op, vyos-opennhrp
+Replaces: vyos-nhrp
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyos-nhrp/vyos-nhrp_0.1.0+vyos1+helium2_all.deb
+Size: 9820
+SHA256: 57b88a2411976178951eba4b5f355f53a5f4a92ed7e2628f3dcd985fca6f65c4
+SHA1: be1aa6073834ee567f70694c36ab007e169c24f2
+MD5sum: 0c6a4c0f50b7b4fc0f151de38483ab91
+Description: VyOs package vyos-nhrp
+ VyOS package vyos-nhrp
+
+Package: vyos-opennhrp
+Version: 0.14.1-1+vyos1+helium2
+Architecture: armel
+Maintainer: Mark Bryars <debian@darkskiez.co.uk>
+Installed-Size: 220
+Depends: libc-ares2 (>= 1.7.0), libc6 (>= 2.9)
+Homepage: http://sourceforge.net/projects/opennhrp/
+Priority: extra
+Section: unknown
+Filename: pool/main/v/vyos-opennhrp/vyos-opennhrp_0.14.1-1+vyos1+helium2_armel.deb
+Size: 70122
+SHA256: fdf4cece890b62dbe0f9438baf21b76c110b5ba0e751b0aa1e6a76d161e3e240
+SHA1: 45f60bed791867741239bce41d8664ecf58b7a6a
+MD5sum: 8cbfd3c3892a674e0b4a75df89be979b
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: vyos-vxlan
+Version: 1.0.0+vyos1+helium2
+Architecture: all
+Maintainer: VyOS Maintainers <maintainers@vyos.net>
+Installed-Size: 832
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op
+Replaces: vyos-vxlan
+Priority: extra
+Section: contrib/net
+Filename: pool/main/v/vyos-vxlan/vyos-vxlan_1.0.0+vyos1+helium2_all.deb
+Size: 16058
+SHA256: 1a2df9b8fcc3248635b265582b1ab6170ba6c76f4b2cb25d0b382a816c166df1
+SHA1: 7277ec16260cbc5d63fcf7979c87cff864b8bbf3
+MD5sum: e88c6179dcc5adeec3e84ff9b32ecd9f
+Description: VyOS VXLAN support package
+ VyOS VXLAN configuration templates and scripts
+
+Package: wpasupplicant
+Source: wpa
+Version: 1.1+vyos1+helium1
+Architecture: armel
+Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Installed-Size: 1232
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.1.4), libncurses5 (>= 5.7+20100313), libnl-3-200 (>= 3.2.25vyos1+helium1), libnl-genl-3-200 (>= 3.2.25vyos1+helium1), libpcsclite1 (>= 1.5.5), libreadline6 (>= 6.0), libssl0.9.8 (>= 0.9.8m-1), lsb-base (>= 3.0-6), adduser, initscripts (>= 2.88dsf-13.1)
+Suggests: wpagui, libengine-pkcs11-openssl
+Homepage: http://w1.fi/wpa_supplicant/
+Priority: optional
+Section: net
+Filename: pool/main/w/wpa/wpasupplicant_1.1+vyos1+helium1_armel.deb
+Size: 525698
+SHA256: baaf21791d0ccec9bb153e61f706e0d65de0badf8369fe968792b29e1dad3a8c
+SHA1: e91c187d3df71774b0ea37e49a166cef2011a012
+MD5sum: 3c645007721a06e4e94a70391cb07947
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ WPA and WPA2 are methods for securing wireless networks, the former
+ using IEEE 802.1X, and the latter using IEEE 802.11i. This software
+ provides key negotiation with the WPA Authenticator, and controls
+ association with IEEE 802.11i networks.
+

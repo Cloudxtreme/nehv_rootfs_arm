@@ -1,0 +1,9 @@
+9294b9b8c32f0cac8cbf5d18f6fb5f5c  usr/lib/conntrack-tools/ct_helper_ftp.la
+5adbea793022bcd569a5605633f86869  usr/lib/conntrack-tools/ct_helper_ftp.so
+649a2fa87a8487d283cac80fed8d52ba  usr/lib/conntrack-tools/ct_helper_rpc.la
+e03091b232f10b439ff896392f8fc010  usr/lib/conntrack-tools/ct_helper_rpc.so
+879eb8d79dc67c9860f1b2701f491588  usr/lib/conntrack-tools/ct_helper_tns.la
+8145642a4231619f422d651aaffb0890  usr/lib/conntrack-tools/ct_helper_tns.so
+ceb43e3832c7197502461fc591fbbf01  usr/share/doc/conntrack-helpers/AUTHORS
+160d7fc52c5e70c7547ae6be021d1030  usr/share/doc/conntrack-helpers/changelog.Debian.gz
+52c37fca8fc955ab1aedf31505653857  usr/share/doc/conntrack-helpers/copyright

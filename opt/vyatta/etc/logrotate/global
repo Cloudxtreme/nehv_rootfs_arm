@@ -1,0 +1,7 @@
+/var/log/messages {
+  missingok
+  notifempty
+  create
+  rotate 5
+  size=250k
+}

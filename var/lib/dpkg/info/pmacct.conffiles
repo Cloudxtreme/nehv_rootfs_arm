@@ -1,0 +1,3 @@
+/etc/default/pmacct
+/etc/pmacct/pmacctd.conf
+/etc/init.d/pmacct

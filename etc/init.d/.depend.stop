@@ -1,0 +1,12 @@
+TARGETS = vyatta-keepalived live-initramfs vyatta-quagga atd mdadm netplug vyatta-router urandom fuse sendsigs rsyslog umountnfs.sh hwclock.sh networking ifupdown umountfs umountroot mdadm-raid halt reboot
+sendsigs: vyatta-quagga atd vyatta-keepalived fuse
+rsyslog: vyatta-quagga atd sendsigs vyatta-keepalived mdadm live-initramfs netplug vyatta-router
+umountnfs.sh: sendsigs vyatta-quagga atd rsyslog vyatta-keepalived fuse
+hwclock.sh: atd rsyslog vyatta-router
+networking: umountnfs.sh vyatta-quagga vyatta-keepalived netplug
+ifupdown: umountnfs.sh networking vyatta-quagga vyatta-keepalived netplug
+umountfs: urandom umountnfs.sh hwclock.sh networking vyatta-quagga atd vyatta-keepalived ifupdown mdadm fuse live-initramfs netplug vyatta-router
+umountroot: umountfs
+mdadm-raid: umountfs mdadm
+halt: umountroot
+reboot: umountroot

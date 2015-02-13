@@ -1,0 +1,14 @@
+2014-10-13 19:04:11  == begin boot-config-loader
+2014-10-13 19:04:11  -- begin load
+2014-10-13 19:04:11  -- load finished successfully
+2014-10-13 19:04:11  -- begin commit
+2014-10-13 19:04:17  -- commit failed
+2014-10-13 19:04:17  -- teardown succeeded
+2014-10-13 19:04:17  -- exiting
+2014-10-13 19:05:21  == begin boot-config-loader
+2014-10-13 19:05:21  -- begin load
+2014-10-13 19:05:21  -- load finished successfully
+2014-10-13 19:05:21  -- begin commit
+2014-10-13 19:05:25  -- commit failed
+2014-10-13 19:05:25  -- teardown succeeded
+2014-10-13 19:05:25  -- exiting

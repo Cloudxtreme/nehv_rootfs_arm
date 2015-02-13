@@ -1,0 +1,44 @@
+Oct 13 19:03:57 localhost zebra[818]: Zebra 0.99.20.1 starting: vty@0
+Oct 13 19:03:57 localhost ripd[821]: RIPd 0.99.20.1 starting: vty@0
+Oct 13 19:03:57 localhost ripngd[823]: RIPNGd 0.99.20.1 starting: vty@0
+Oct 13 19:03:57 localhost ospfd[825]: OSPFd 0.99.20.1 starting: vty@0
+Oct 13 19:03:57 localhost ospf6d[827]: OSPF6d (Quagga-0.99.20.1 ospf6d-0.9.7r) starts: vty@0
+Oct 13 19:03:57 localhost bgpd[829]: BGPd 0.99.20.1 starting: vty@0, bgp@<all>:179
+Oct 13 19:03:58 localhost rl-system.init: Creating ssh v2 rsa host key.
+Oct 13 19:04:03 localhost rl-system.init: Creating ssh v2 dsa host key.
+Oct 13 19:04:06 localhost rl-system.init: Creating ssh v1 host key.
+Oct 13 19:04:10 localhost modprobe: FATAL: Could not load /lib/modules/3.4.0-1-hammerhead/modules.dep: No such file or directory
+Oct 13 19:04:11 localhost modprobe: last message repeated 9 times
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:11 localhost sudo:     root : unable to resolve host localhost.localdomain
+Oct 13 19:04:11 localhost sudo: cannot execute /usr/sbin/sendmail: No such file or directory
+Oct 13 19:04:14 vyos ntpd[1207]: ntpd 4.2.6p2@1.2194-o Fri Jul 18 08:37:25 UTC 2014 (1)
+Oct 13 19:04:14 vyos ntpd[1208]: proto: precision = 0.833 usec
+Oct 13 19:04:16 vyos ntpd_intres[1210]: host name not found: 0.pool.ntp.org
+Oct 13 19:04:16 vyos ntpd_intres[1210]: host name not found: 1.pool.ntp.org
+Oct 13 19:04:16 vyos ntpd_intres[1210]: host name not found: 2.pool.ntp.org
+Oct 13 19:04:17 vyos boot-config-loader: Commit failed at boot.
+Oct 13 19:04:17 vyos kernel: [ 2642.714871] netlink: 20 bytes leftover after parsing attribue.<> 62748]ntik 0btslfoe fe asn trbts
+Oct 13 19:04:17 vyos getty[1321]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:27 vyos getty[1322]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:37 vyos getty[1323]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:48 vyos getty[1324]: /dev/ttyS0: No such file or directory
+Oct 13 19:04:58 vyos getty[1325]: /dev/ttyS0: No such file or directory
+Oct 13 19:05:19 vyos zebra[798]: Zebra 0.99.20.1 starting: vty@0
+Oct 13 19:05:19 vyos ripd[816]: RIPd 0.99.20.1 starting: vty@0
+Oct 13 19:05:19 vyos ripngd[828]: RIPNGd 0.99.20.1 starting: vty@0
+Oct 13 19:05:19 vyos ospfd[834]: OSPFd 0.99.20.1 starting: vty@0
+Oct 13 19:05:19 vyos ospf6d[837]: OSPF6d (Quagga-0.99.20.1 ospf6d-0.9.7r) starts: vty@0
+Oct 13 19:05:19 vyos bgpd[839]: BGPd 0.99.20.1 starting: vty@0, bgp@<all>:179
+Oct 13 19:05:20 vyos modprobe: FATAL: Could not load /lib/modules/3.4.0-1-hammerhead/modules.dep: No such file or directory
+Oct 13 19:05:24 vyos ntpd[1192]: ntpd 4.2.6p2@1.2194-o Fri Jul 18 08:37:25 UTC 2014 (1)
+Oct 13 19:05:24 vyos ntpd[1193]: proto: precision = 0.833 usec
+Oct 13 19:05:25 vyos boot-config-loader: Commit failed at boot.
+Oct 13 19:05:25 vyos kernel: [ 2710.680933] netlink: 20 bytes etvratrprigatiue.<> 70604]ntik 0btslfoe fe asn trbts
+Oct 13 19:05:25 vyos getty[1273]: /dev/ttyS0: No such file or directory
+Oct 13 19:05:26 vyos ntpd_intres[1195]: host name not found: 0.pool.ntp.org
+Oct 13 19:05:26 vyos ntpd_intres[1195]: host name not found: 1.pool.ntp.org
+Oct 13 19:05:26 vyos ntpd_intres[1195]: host name not found: 2.pool.ntp.org

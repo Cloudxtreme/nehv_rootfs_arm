@@ -1,0 +1,5 @@
+/etc/strongswan.conf
+/etc/logcheck/violations.ignore.d/strongswan
+/etc/logcheck/ignore.d.paranoid/strongswan
+/etc/logcheck/ignore.d.server/strongswan
+/etc/logcheck/ignore.d.workstation/strongswan

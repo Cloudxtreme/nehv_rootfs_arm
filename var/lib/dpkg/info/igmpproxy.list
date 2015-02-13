@@ -1,0 +1,17 @@
+/.
+/sbin
+/sbin/igmpproxy
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/igmpproxy
+/usr/share/doc/igmpproxy/changelog.gz
+/usr/share/doc/igmpproxy/NEWS.gz
+/usr/share/doc/igmpproxy/README
+/usr/share/doc/igmpproxy/copyright
+/usr/share/doc/igmpproxy/changelog.Debian.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/igmpproxy
+/etc
+/etc/igmpproxy.conf
